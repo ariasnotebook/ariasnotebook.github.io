@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" id="html-lang-root">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-notebook-48.png">
+	<link rel="shortcut icon" type="image/png" href="/img/favicon-notebook-48.png">
+  
+  <title>How I Built My Personal Website in 5 Minutes (Using Hexo) | Lan&#39;s Notebook</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Snipcart CSS -->
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body data-page-title-en="How I Built My Personal Website in 5 Minutes (Using Hexo)" data-page-title-zh="在5分钟内搭建属于你的个人网站（Hexo框架）">
+  <header class="site-header">
+    <div class="header-bar">
+      <div class="logo">
+        <h2 style="margin:0; color: var(--text);">
+          <i class="fa-solid fa-leaf" style="color: var(--hover);"></i>
+          <a href="/" data-i18n="title">
+            <span class="i18n-text">Lan&#39;s Notebook</span>
+          </a>
+        </h2>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="nav-links">
+      
+        
+          <a href="/" data-i18n="menu.home"><i class="fa-solid fa-house"></i>
+            <span class="i18n-text">Home</span>
+          </a>
+          
+            
+        
+          <a href="/categories" data-i18n="menu.blog"><i class="fa-solid fa-book-open"></i>
+            <span class="i18n-text">Blog</span>
+          </a>
+          
+            
+        
+          <a href="/about" data-i18n="menu.about_me"><i class="fa-solid fa-user-astronaut"></i>
+            <span class="i18n-text">About me</span>
+          </a>
+          
+            
+              <!-- <button class="snipcart-checkout lang-btn nav-btn nav-cart" type="button">
+                <i class="fa-solid fa-shopping-cart"></i> <span data-i18n="cart">Cart</span>
+                <span class="snipcart-items-count" style="position: absolute; top: -8px; right: -8px; background: var(--icon); color: var(--block); border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: bold;">0</span>
+              </button> -->
+              <button class="lang-btn nav-btn nav-lang" type="button" id="lang-switch-btn" aria-label="Switch language" onclick="switchLang()">
+                <i class="fa-solid fa-earth-asia"></i> <span id="lang-switch-label">CN/EN</span>
+              </button>
+    </nav>
+    <div class="nav-backdrop" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <div class="post-content-container">
+  
+  
+    <div class="article-content-container">
+    <div class="article-title-section">
+        <span class="article-date">
+            2026.01.22
+        </span>
+        
+        <h1 class="article-title-wrapper">
+            <span class="lang-content" data-lang="en" style="">How I Built My Personal Website in 5 Minutes (Using Hexo)</span>
+            <span class="lang-content" data-lang="zh-CN" style="display:none;">在5分钟内搭建属于你的个人网站（Hexo框架）</span>
+        </h1>
+        
+    </div>
+    
+    <div class="article-content lang-content" data-lang="en" style=""><p>Let&#39;s be honest:</p>
+<p>most of us <em>think</em> about building a personal website far more than we actually build one.</p>
+<p>We imagine:</p>
+<ul>
+<li>perfect layouts</li>
+<li>poetic &quot;About Me&quot; pages</li>
+<li>tasteful fonts that say <em>I have depth but also good design sense</em></li>
+</ul>
+<p>And then… we close the tab.</p>
+<p>This time, I did it differently.</p>
+<p>I built my personal website in <strong>about 5 minutes</strong> - no exaggeration, no mystical coding powers, and no web designer alter ego.</p>
+<hr>
+<h2 id="Why-Hexo"><a href="#Why-Hexo" class="headerlink" title="Why Hexo?"></a>Why Hexo?</h2><p>Hexo is a <strong>static site generator</strong>, which is a fancy way of saying:</p>
+<blockquote>
+<p>You write words → Hexo turns them into a website</p>
+</blockquote>
+<p>Why I love it:</p>
+<ul>
+<li>Lightweight</li>
+<li>Markdown-based (aka writing without UI drama)</li>
+<li>Perfect for blogs, journals, portfolios, and &quot;I just want to exist online&quot; websites</li>
+<li>Customizable <em>later</em> (important keyword: later)</li>
+</ul>
+<p>If your goal is <em>sharing thoughts</em>, not <em>fighting CSS</em>, Hexo is a great friend.</p>
+<hr>
+<h2 id="What-You-Need-Very-Short-List"><a href="#What-You-Need-Very-Short-List" class="headerlink" title="What You Need (Very Short List)"></a>What You Need (Very Short List)</h2><p>Before we summon the website gods, make sure you have:</p>
+<ul>
+<li><strong>Node.js</strong> installed</li>
+<li><strong>Git</strong> installed</li>
+<li>A terminal (don&#39;t be scared, it&#39;s just a text box with confidence)</li>
+</ul>
+<p>That&#39;s it. No 27-step checklist.</p>
+<hr>
+<h2 id="Step-1-Install-Hexo-30-seconds"><a href="#Step-1-Install-Hexo-30-seconds" class="headerlink" title="Step 1: Install Hexo (30 seconds)"></a>Step 1: Install Hexo (30 seconds)</h2><p>In your terminal, type:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>Congrats. You&#39;ve installed Hexo and are officially someone who &quot;uses the terminal.&quot;</p>
+<hr>
+<h2 id="Step-2-Create-Your-Site-1-minute"><a href="#Step-2-Create-Your-Site-1-minute" class="headerlink" title="Step 2: Create Your Site (1 minute)"></a>Step 2: Create Your Site (1 minute)</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init my-blog</span><br><span class="line">cd my-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>At this point, Hexo quietly created:</p>
+<ul>
+<li>a blog structure</li>
+<li>folders with mysterious names</li>
+<li>a future for your thoughts</li>
+</ul>
+<hr>
+<h2 id="Step-3-Run-It-Locally-30-seconds"><a href="#Step-3-Run-It-Locally-30-seconds" class="headerlink" title="Step 3: Run It Locally (30 seconds)"></a>Step 3: Run It Locally (30 seconds)</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>Open your browser and go to:<br> 👉 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
+<p>Boom.</p>
+<p>You have a website.</p>
+<p>Already.</p>
+<p>Yes, this fast.</p>
+<hr>
+<h2 id="Step-4-Write-Something-The-Fun-Part"><a href="#Step-4-Write-Something-The-Fun-Part" class="headerlink" title="Step 4: Write Something (The Fun Part)"></a>Step 4: Write Something (The Fun Part)</h2><p>Create your first post:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;Hello World&quot;</span><br></pre></td></tr></table></figure>
+
+<p>Edit the file in the <code>source/_posts</code> folder using Markdown.</p>
+<p>No distractions.</p>
+<p>No formatting anxiety.</p>
+<p>Just words.</p>
+<p>Perfect for:</p>
+<ul>
+<li>journaling</li>
+<li>project notes</li>
+<li>late-night philosophical thoughts</li>
+<li>&quot;what am I doing with my life&quot; essays</li>
+</ul>
+<hr>
+<h2 id="Step-5-Deploy-Optional-but-Magical"><a href="#Step-5-Deploy-Optional-but-Magical" class="headerlink" title="Step 5: Deploy (Optional, but Magical)"></a>Step 5: Deploy (Optional, but Magical)</h2><p>You can deploy to GitHub Pages, Netlify, or anywhere static websites are welcome.</p>
+<p>Once deployed, your personal website officially exists on the internet - which is kind of wild, if you think about it.</p>
+<hr>
+<h2 id="Why-This-Works-for-Personal-Blogs"><a href="#Why-This-Works-for-Personal-Blogs" class="headerlink" title="Why This Works for Personal Blogs"></a>Why This Works for Personal Blogs</h2><p>Hexo doesn&#39;t scream &quot;corporate.&quot;</p>
+<p>It doesn&#39;t force you into templates that feel like LinkedIn profiles with feelings removed.</p>
+<p>Instead, it feels like:</p>
+<ul>
+<li>a notebook</li>
+<li>a quiet corner of the internet</li>
+<li>a place to exist without algorithms yelling at you</li>
+</ul>
+<p>Which is exactly what I wanted.</p>
+<hr>
+<h2 id="Final-Thoughts"><a href="#Final-Thoughts" class="headerlink" title="Final Thoughts"></a>Final Thoughts</h2><p>You don&#39;t need:</p>
+<ul>
+<li>a perfect design</li>
+<li>40 blog posts ready</li>
+<li>a personal brand strategy document</li>
+</ul>
+<p>You just need:</p>
+<ul>
+<li>one page</li>
+<li>one thought</li>
+<li>five minutes of courage</li>
+</ul>
+<p>Your website doesn&#39;t need to be finished.</p>
+<p>It just needs to be <strong>alive</strong>.</p>
+</div>
+    <div class="article-content lang-content" data-lang="zh-CN" style="display:none;"><p>说实话：</p>
+<p>我们大多数人<em>想</em>建个人网站的时间远比实际建网站的时间长得多。</p>
+<p>我们想象着：</p>
+<ul>
+<li><p>完美的布局</p>
+</li>
+<li><p>充满诗意的“关于我”页面</p>
+</li>
+<li><p>既展现我才华又体现我设计品味的雅致字体</p>
+</li>
+</ul>
+<p>然后……我们就关掉了网页。</p>
+<p>这次，我的做法不一样。</p>
+<p>我只用了<strong>大约5分钟</strong>就建好了我的个人网站——没有夸张，没有神秘的编程能力，也没有网页设计师的化身。</p>
+<hr>
+<h2 id="为什么选择Hexo？"><a href="#为什么选择Hexo？" class="headerlink" title="为什么选择Hexo？"></a>为什么选择Hexo？</h2><p>Hexo 是一个<strong>静态网站生成器</strong>，简单来说就是：</p>
+<blockquote>
+<p>你写点东西 → Hexo 把它们变成一个网站</p>
+</blockquote>
+<p>我喜欢它的原因：</p>
+<ul>
+<li><p>轻量级</p>
+</li>
+<li><p>基于 Markdown（也就是写作时无需忍受界面的繁琐）</p>
+</li>
+<li><p>非常适合博客、日志、作品集以及“我只想在网上存在”之类的网站</p>
+</li>
+<li><p>可自定义（重点：可自定义）</p>
+</li>
+</ul>
+<p>如果你的目标是<em>分享想法</em>，而不是<em>与 CSS 作斗争</em>，那么 Hexo 就是你的好帮手。</p>
+<hr>
+<h2 id="你需要准备的东西（非常简短的清单）"><a href="#你需要准备的东西（非常简短的清单）" class="headerlink" title="你需要准备的东西（非常简短的清单）"></a>你需要准备的东西（非常简短的清单）</h2><p>在我们召唤网站之神之前，请确保你已安装：</p>
+<ul>
+<li><p><strong>Node.js</strong></p>
+</li>
+<li><p><strong>Git</strong></p>
+</li>
+<li><p>终端（别害怕，它只是一个充满自信的文本框）</p>
+</li>
+</ul>
+<p>就这些。没有 27 步的清单。</p>
+<hr>
+<h2 id="步骤-1：安装-Hexo（30-秒）"><a href="#步骤-1：安装-Hexo（30-秒）" class="headerlink" title="步骤 1：安装 Hexo（30 秒）"></a>步骤 1：安装 Hexo（30 秒）</h2><p>在终端中输入：</p>
+<pre><code>
+npm install -g hexo-cli
+</code></pre>
+<p>恭喜！您已成功安装 Hexo，正式成为一名“终端用户”。</p>
+<hr>
+<h2 id="步骤-2：创建您的网站（1-分钟）"><a href="#步骤-2：创建您的网站（1-分钟）" class="headerlink" title="步骤 2：创建您的网站（1 分钟）"></a>步骤 2：创建您的网站（1 分钟）</h2><pre><code>
+hexo init my-blog
+
+cd my-blog
+
+npm install
+</code></pre>
+<p>此时，Hexo 已悄然创建了：</p>
+<ul>
+<li><p>博客结构</p>
+</li>
+<li><p>名称神秘的文件夹</p>
+</li>
+<li><p>存放您想法的未来</p>
+</li>
+</ul>
+<hr>
+<h2 id="步骤-3：本地运行（30-秒）"><a href="#步骤-3：本地运行（30-秒）" class="headerlink" title="步骤 3：本地运行（30 秒）"></a>步骤 3：本地运行（30 秒）</h2><pre><code>
+hexo server
+</code></pre>
+<p>打开浏览器并访问：</p>
+<p>👉 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
+<p>搞定！</p>
+<p>您现在拥有一个网站了。</p>
+<p>已经！</p>
+<p>是的，就是这么快！</p>
+<hr>
+<h2 id="第四步：写点什么（有趣的部分）"><a href="#第四步：写点什么（有趣的部分）" class="headerlink" title="第四步：写点什么（有趣的部分）"></a>第四步：写点什么（有趣的部分）</h2><p>创建你的第一篇文章：</p>
+<pre><code>
+hexo new post &quot;Hello World&quot;
+</code></pre>
+<p>使用 Markdown 编辑 <code>source/_posts</code> 文件夹中的文件。</p>
+<p>没有干扰。</p>
+<p>没有格式焦虑。</p>
+<p>只有文字。</p>
+<p>非常适合：</p>
+<ul>
+<li><p>日记</p>
+</li>
+<li><p>项目笔记</p>
+</li>
+<li><p>深夜哲学思考</p>
+</li>
+<li><p>“我的人生目标是什么”之类的文章</p>
+</li>
+</ul>
+<hr>
+<h2 id="第五步：部署（可选，但很神奇）"><a href="#第五步：部署（可选，但很神奇）" class="headerlink" title="第五步：部署（可选，但很神奇）"></a>第五步：部署（可选，但很神奇）</h2><p>你可以部署到 GitHub Pages、Netlify 或任何支持静态网站的平台。</p>
+<p>部署完成后，你的个人网站就正式存在于互联网上了——仔细想想，这感觉还挺奇妙的。</p>
+<hr>
+<h2 id="为什么它适合个人博客"><a href="#为什么它适合个人博客" class="headerlink" title="为什么它适合个人博客"></a>为什么它适合个人博客</h2><p>Hexo 不会给人“企业”的感觉。</p>
+<p>它不会强迫你使用那些感觉像删减了情感的 LinkedIn 个人资料模板。</p>
+<p>相反，它给人的感觉更像是：</p>
+<ul>
+<li><p>一本笔记本</p>
+</li>
+<li><p>互联网上的一处静谧角落</p>
+</li>
+<li><p>一个可以让你自在存在，不受算法干扰的地方</p>
+</li>
+</ul>
+<p>这正是我想要的。</p>
+<hr>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>你不需要：</p>
+<ul>
+<li><p>一个完美的设计</p>
+</li>
+<li><p>40 篇准备好的博客文章</p>
+</li>
+<li><p>一份个人品牌战略文件</p>
+</li>
+</ul>
+<p>你只需要：</p>
+<ul>
+<li><p>一页纸</p>
+</li>
+<li><p>一个想法</p>
+</li>
+<li><p>五分钟的勇气</p>
+</li>
+</ul>
+<p>你的网站不需要完美无缺。</p>
+<p>它只需要<strong>鲜活</strong>地存在。</p>
+</div>
+    
+    <div class="article-footer">
+        ~ 🍂 🐿️ 🍂 ~
+    </div>
+    </div>
+  
+</div>
+  </main>
+
+  <footer style="text-align: center;">
+    <p>
+      <i class="fa-solid fa-cloud" style="color: #fff;"></i><br>
+      &copy; 2026
+        <span data-i18n="author" class="i18n-text"></span>
+          <br><span data-i18n="footer_description" class="i18n-text"></span>
+    </p>
+  </footer>
+
+  <script>
+    (function() {
+      var LANG_KEY = 'site-lang';
+      var i18n = {"en":{"title":"Lan's Notebook","subtitle":"The Life Journal of an Earthling","description":"Welcome to my notebook, where I record everything I love about the world and about living on Earth.","introduction":"Hi, I'm ","author":"Lan","language":"en","menu.home":"Home","menu.blog":"Blog","menu.shop":"Market","menu.about":"About Me","cart":"Cart","achievements_bento":[{"text":"Kept track of monthly calendar journals for over 9 years"},{"text":"Built an aesthetic and functional online shopping website within 30 days"},{"text":"Maintained a consistent workout routine every other day for over 2 years"}],"footer_description":"Living on Earth, dreaming in the cloud.","blog_page.title":"My Blog","blog_page.description":"As an earthling, all I do in my life is ...","memories_page.title":"Living In The Moment","memories_page.description":"Capturing the moments that make life worth living.","memories_page.empty":"Put images into /source/memories-en/ or /source/memories-cn/","projects_page.title":"My Projects","projects_page.want_more":"Want to know more about this project?","projects_page.empty":"No projects yet.","shop_page.title":"Today's Recommendation","shop_page.description":"Discover unique digital products crafted with care.","shop_page.button_text":"View All Products","shop_page.cart_button_text":"Add to Cart","product_page.title":"My Shop","product_page.description":"Browse all product categories","product_categories.design-art":"Design Art","product_categories.web-development":"Web Development Kit","product_categories.instruction-videos":"Instruction Videos","sections.what_i_love":"What I'd Love to do","sections.things_proud_of":"Things I'm Proud of","sections.moments_alive":"Moments I Felt Alive","sections.things_made":"Things I've Made","sections.things_recommend":"Things I Recommend","buttons.view_more":"View more","buttons.click_to_open":"Click to Open","buttons.open":"Open","recommendation.type":"Type","recommendation.selection":"Selection","recommendation.last_stored":"Last Stored","recommendation.notes_header":"Notes","recommendation.type_label":"Type:","recommendation.extra_label_author":"Author","recommendation.extra_label_artist":"Artist","recommendation.extra_label_year":"Year","post_meta.categories":"Categories","post_meta.tags":"Tags","tags.reading_notes":"Reading notes","tags.daily_sparks":"Daily sparks","tags.monthly_review":"Monthly review","tags.note_taking":"Note Taking","tags.religions":"Religions","tags.life_kits":"Life Kits","tags.languages":"Languages","tags.calligraphy_art":"Calligraphy art","tags.paintings":"Paintings","tags.web_development":"Web development","tags.vibe_coding":"Vibe coding","tag_descriptions.reading_notes":"Traces left by other minds passing through mine.","tag_descriptions.daily_sparks":"Thoughts drifting like clouds.","tag_descriptions.monthly_review":"Looking back at the Earth time that has just passed.","tag_descriptions.note_taking":"Observations captured before they disappear.","tag_descriptions.religions":"Ways humans search for meaning beyond the visible world.","tag_descriptions.life_kits":"Tools and ideas for surviving daily life on Earth.","tag_descriptions.languages":"Different sounds humans use to name the same world.","tag_descriptions.calligraphy_art":"Movement, ink, and breath meeting on paper.","tag_descriptions.paintings":"Colors arranged to record a feeling of being alive.","tag_descriptions.web_development":"Building bridges between the digital and the real world.","tag_descriptions.vibe_coding":"Code with a feeling, not just logic.","selected_blog_categories.journaling":"Journaling","selected_blog_categories.learning":"Learning","selected_blog_categories.creating":"Creating","selected_blog_categories.coding":"Coding","selected_blog_categories_descriptions.journaling":"Fragments of daily life, inner weather, and passing thoughts on Earth.","selected_blog_categories_descriptions.learning":"Observations collected while trying to understand how this world works.","selected_blog_categories_descriptions.creating":"Things shaped by hand to make inner experiences visible.","selected_blog_categories_descriptions.coding":"Code that transforms ideas into reality.","menu.market":"Market","menu.about_me":"About Me","achievements_bento_text_0":"Kept track of monthly calendar journals for over 9 years","achievements_bento_text_1":"Built an aesthetic and functional online shopping website within 30 days","achievements_bento_text_2":"Maintained a consistent workout routine every other day for over 2 years"},"zh-CN":{"title":"生活笔记","subtitle":"地球漫游指南","description":"欢迎来到我的个人博物馆——这里记录着我作为一个人类，一生中最想留下的痕迹。","introduction":"嗨，我是","author":"秋边边","language":"zh-CN","menu.home":"首页","menu.blog":"博客","menu.shop":"商店","menu.about":"关于博主","cart":"购物车","achievements_bento":[{"text":"记录每月日历超过9年"},{"text":"30天内搭建了一个在线购物网站"},{"text":"坚持隔天健身一次的routine超过2年"}],"footer_description":"谢谢你的到访，欢迎再来~","blog_page.title":"我的博客","blog_page.description":"快来探索我的博客吧！","memories_page.title":"我的瞬间","memories_page.description":"捕捉那些值得留住的瞬间。","memories_page.empty":"请将图片放入 /source/memories-en/ 或 /source/memories-cn/","projects_page.title":"我的作品","projects_page.want_more":"想了解更多关于这个项目？","projects_page.empty":"暂无项目。","shop_page.title":"今日推荐","shop_page.description":"欢迎来到我的数字商店！","shop_page.button_text":"全部商品","shop_page.cart_button_text":"加入购物车","product_page.title":"我的商店","product_page.description":"走过路过不要错过~","product_categories.design-art":"设计艺术","product_categories.web-development":"网页开发","product_categories.instruction-videos":"教学视频","sections.what_i_love":"我的笔记","sections.things_proud_of":"我的成就","sections.moments_alive":"我的瞬间","sections.things_made":"我的作品","sections.things_recommend":"我的推荐","buttons.view_more":"查看更多","buttons.click_to_open":"浏览","buttons.open":"查看","recommendation.type":"类型","recommendation.selection":"作品名称","recommendation.last_stored":"录入时间","recommendation.notes_header":"观后感","recommendation.type_label":"类型：","recommendation.extra_label_author":"作者","recommendation.extra_label_artist":"歌手","recommendation.extra_label_year":"年份","post_meta.categories":"分类","post_meta.tags":"标签","tags.reading_notes":"阅读笔记","tags.daily_sparks":"日记随笔","tags.monthly_review":"月度回顾","tags.note_taking":"笔记系统","tags.religions":"宗教","tags.life_kits":"人类生存指南","tags.languages":"语言学习","tags.calligraphy_art":"书法","tags.paintings":"绘画","tags.web_development":"网页开发","tags.vibe_coding":"氛围编程","tag_descriptions.reading_notes":"他人思想经过我时，留下的痕迹。","tag_descriptions.daily_sparks":"像云一样飘着的念头。","tag_descriptions.monthly_review":"过去的一个月干了点啥呢。","tag_descriptions.note_taking":"像姑姑教过儿捉鸟一样捕捉那些转瞬即逝的灵感。","tag_descriptions.religions":"人类仰望世界时，提出的不同答案。","tag_descriptions.life_kits":"真正聪明的人才能学会的东西。","tag_descriptions.languages":"人类用来呼唤同一个世界的不同声音。","tag_descriptions.calligraphy_art":"手的动作，墨的流动，呼吸的节奏。","tag_descriptions.paintings":"把当下的感觉，留在颜色里。","tag_descriptions.web_development":"我的赛博之家。","tag_descriptions.vibe_coding":"别先想对不对，先顺着感觉写。","selected_blog_categories.journaling":"日记","selected_blog_categories.learning":"学习","selected_blog_categories.creating":"创作","selected_blog_categories.coding":"编程","selected_blog_categories_descriptions.journaling":"关于我的日常、情绪与一些缓慢流动的思绪。","selected_blog_categories_descriptions.learning":"关于我试图理解世界这件事情。","selected_blog_categories_descriptions.creating":"关于我的创造，手作与记录。","selected_blog_categories_descriptions.coding":"将想法转化为现实的代码。","menu.market":"商店","menu.about_me":"关于博主","achievements_bento_text_0":"记录每月日历超过9年","achievements_bento_text_1":"30天内搭建了一个在线购物网站","achievements_bento_text_2":"坚持隔天健身一次的routine超过2年"}};
+      function getLang() {
+        var q = new URLSearchParams(window.location.search).get('lang');
+        if (q === 'zh-CN' || q === 'en') return q;
+        try { return localStorage.getItem(LANG_KEY) || 'en'; } catch (e) { return 'en'; }
+      }
+      function setLang(lang) {
+        try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+        var url = new URL(window.location.href);
+        if (lang === 'en') url.searchParams.delete('lang');
+        else url.searchParams.set('lang', lang);
+        if (window.history && window.history.replaceState) window.history.replaceState({}, '', url.toString());
+        applyLang(lang);
+      }
+      function applyLang(lang) {
+        var root = document.documentElement;
+        if (root) root.setAttribute('lang', lang === 'zh-CN' ? 'zh-CN' : 'en');
+        var strings = i18n[lang] || i18n.en;
+        var body = document.body;
+        var label = document.getElementById('lang-switch-label');
+        if (label) label.textContent = lang === 'zh-CN' ? 'EN' : 'CN';
+        var isHome = !window.location.pathname || window.location.pathname === '/' || /\/index\.html$/i.test(window.location.pathname);
+        if (strings.title && strings.subtitle && isHome) document.title = strings.title + ' | ' + strings.subtitle;
+        else if (body) {
+          var te = body.getAttribute('data-page-title-en');
+          var tz = body.getAttribute('data-page-title-zh');
+          if (te != null && tz != null) document.title = lang === 'zh-CN' ? tz : te;
+        }
+        var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');
+        for (var i = 0, n = nodes.length; i < n; i++) {
+          var el = nodes[i];
+          var key = el.getAttribute('data-i18n');
+          if (key != null) {
+            var text = strings[key];
+            if (text != null) {
+              var span = el.querySelector('.i18n-text');
+              if (span) span.textContent = text;
+              else el.textContent = text;
+            }
+          } else el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+        }
+        document.dispatchEvent(new CustomEvent('lang-applied', { detail: { lang: lang } }));
+      }
+      window.switchLang = function() { setLang(getLang() === 'en' ? 'zh-CN' : 'en'); };
+      window.__i18n = i18n;
+      window.__getLang = getLang;
+      window.__applyLang = applyLang;
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function() { applyLang(getLang()); });
+      else applyLang(getLang());
+    })();
+  </script>
+  
+  <!-- Snipcart JavaScript -->
+  <script async src="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.js"></script>
+  <div hidden id="snipcart" 
+       data-api-key="YOUR_SNIPCART_API_KEY"
+       data-config-modal-style="side"
+       data-config-add-product-behavior="none"
+       data-config-currency="usd"
+       data-config-payment-methods="card,alipay">
+  </div>
+  
+  <!-- Update cart count (deferred so Snipcart async load does not block) -->
+  <script>
+    function updateCartCount() {
+      if (typeof Snipcart === 'undefined') return;
+      var c = Snipcart.store.getState().cart.items.count;
+      var el = document.querySelector('.snipcart-items-count');
+      if (el) { el.textContent = c; el.style.display = c > 0 ? 'flex' : 'none'; }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof Snipcart !== 'undefined') Snipcart.store.subscribe(updateCartCount);
+      else setTimeout(function() { if (typeof Snipcart !== 'undefined') { Snipcart.store.subscribe(updateCartCount); updateCartCount(); } }, 600);
+    });
+  </script>
+
+  <script>
+    (function() {
+      var header = document.querySelector('header.site-header');
+      if (!header) return;
+
+      var toggle = header.querySelector('.nav-toggle');
+      var nav = header.querySelector('#site-nav');
+      var backdrop = header.querySelector('.nav-backdrop');
+      if (!toggle || !nav) return;
+
+      function updateHeaderHeightVar() {
+        // Use sticky header height (includes padding); drawer starts below it
+        var h = header.offsetHeight || 0;
+        document.documentElement.style.setProperty('--site-header-height', h + 'px');
+      }
+
+      updateHeaderHeightVar();
+
+      function lockScroll() {
+        var scrollY = window.scrollY || document.documentElement.scrollTop || 0;
+        document.body.dataset.navScrollY = String(scrollY);
+        document.body.classList.add('nav-locked');
+        document.body.style.position = 'fixed';
+        document.body.style.top = '-' + scrollY + 'px';
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.width = '100%';
+      }
+
+      function unlockScroll() {
+        var raw = document.body.dataset.navScrollY || '0';
+        var scrollY = parseInt(raw, 10) || 0;
+        document.body.classList.remove('nav-locked');
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        document.body.style.width = '';
+        delete document.body.dataset.navScrollY;
+        window.scrollTo(0, scrollY);
+      }
+
+      function setOpen(open) {
+        var isOpen = header.classList.contains('nav-open');
+        if (open === isOpen) return;
+        header.classList.toggle('nav-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (open) lockScroll();
+        else unlockScroll();
+      }
+
+      toggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        setOpen(!header.classList.contains('nav-open'));
+      });
+
+      nav.addEventListener('click', function(e) {
+        var link = e.target && e.target.closest ? e.target.closest('a') : null;
+        if (link) setOpen(false);
+      });
+
+      document.addEventListener('click', function(e) {
+        if (header.classList.contains('nav-open') && !header.contains(e.target)) setOpen(false);
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && header.classList.contains('nav-open')) setOpen(false);
+      });
+
+      window.addEventListener('resize', function() {
+        updateHeaderHeightVar();
+        if (window.innerWidth > 768 && header.classList.contains('nav-open')) setOpen(false);
+      });
+
+      if (backdrop) {
+        backdrop.addEventListener('click', function() {
+          if (header.classList.contains('nav-open')) setOpen(false);
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>

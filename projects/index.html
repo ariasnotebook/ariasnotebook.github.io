@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" id="html-lang-root">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-notebook-48.png">
+	<link rel="shortcut icon" type="image/png" href="/img/favicon-notebook-48.png">
+  
+  <title>My Projects | Lan&#39;s Notebook</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Snipcart CSS -->
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body data-page-title-en="My Projects" data-page-title-zh="我的作品">
+  <header class="site-header">
+    <div class="header-bar">
+      <div class="logo">
+        <h2 style="margin:0; color: var(--text);">
+          <i class="fa-solid fa-leaf" style="color: var(--hover);"></i>
+          <a href="/" data-i18n="title">
+            <span class="i18n-text">Lan&#39;s Notebook</span>
+          </a>
+        </h2>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="nav-links">
+      
+        
+          <a href="/" data-i18n="menu.home"><i class="fa-solid fa-house"></i>
+            <span class="i18n-text">Home</span>
+          </a>
+          
+            
+        
+          <a href="/categories" data-i18n="menu.blog"><i class="fa-solid fa-book-open"></i>
+            <span class="i18n-text">Blog</span>
+          </a>
+          
+            
+        
+          <a href="/about" data-i18n="menu.about_me"><i class="fa-solid fa-user-astronaut"></i>
+            <span class="i18n-text">About me</span>
+          </a>
+          
+            
+              <!-- <button class="snipcart-checkout lang-btn nav-btn nav-cart" type="button">
+                <i class="fa-solid fa-shopping-cart"></i> <span data-i18n="cart">Cart</span>
+                <span class="snipcart-items-count" style="position: absolute; top: -8px; right: -8px; background: var(--icon); color: var(--block); border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: bold;">0</span>
+              </button> -->
+              <button class="lang-btn nav-btn nav-lang" type="button" id="lang-switch-btn" aria-label="Switch language" onclick="switchLang()">
+                <i class="fa-solid fa-earth-asia"></i> <span id="lang-switch-label">CN/EN</span>
+              </button>
+    </nav>
+    <div class="nav-backdrop" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    
+<div class="projects-page-wrap">
+  <section class="projects-top-row" aria-label="Project showcase">
+    <div class="projects-showcase">
+      <div class="projects-showcase-left">
+        <div class="projects-image-carousel" id="projectsImageCarousel">
+          <div class="projects-image-track" id="projectsImageTrack" aria-live="polite">
+            <!-- Cards filled by JS: 0=thumbnail+desc+btn, 1-4=image+desc, 5=want more+post btn -->
+          </div>
+          <div class="projects-image-dots" id="projectsImageDots" aria-label="Select slide"></div>
+        </div>
+      </div>
+      <div class="projects-showcase-right">
+        <div class="projects-desc-carousel" id="projectsDescCarousel">
+          <div class="projects-desc-track" id="projectsDescTrack" aria-live="polite">
+            <!-- Descriptions filled by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects-bottom-row" aria-label="Project list">
+    <button type="button" class="projects-nav-arrow projects-nav-arrow--left" id="projectsNavLeft" aria-label="Previous projects">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <div class="projects-strip-wrap">
+      <div class="projects-strip" id="projectsStrip">
+        <!-- Project buttons filled by JS -->
+      </div>
+    </div>
+    <button type="button" class="projects-nav-arrow projects-nav-arrow--right" id="projectsNavRight" aria-label="Next projects">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </section>
+</div>
+
+<script type="application/json" id="projectsPageDataEn">[{"title":"Lán Ink Studio - Chinese Tattoo Design","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project1-en/","thumbnail":"/project-img/laninkstudio_preview.webp","description":"Lán Ink Studio is a niche online brand dedicated to authentic Chinese calligraphy tattoo design. It was created to bridge language, culture, and identity—offering meaningful, historically rooted artwork rather than generic translations or random fonts. Every design is handcrafted, culturally researched, and thoughtfully created for global tattoo lovers seeking depth and authenticity.","image1":"/project-img/laninkstudio_1.webp","description1":"Lán Ink Studio was fully developed independently—from brand positioning and visual identity to website development, SEO strategy, content marketing, and analytics setup. The entire e-commerce system, blog architecture, and marketing framework were designed and executed by me, combining artistic expertise with digital strategy to create a culturally distinctive and professionally structured online brand.","image2":"/project-img/laninkstudio_2.webp","description2":"The shop also offers curated ready-made calligraphy designs for those who already resonate with a specific concept. These pieces are pre-designed in various traditional script styles, professionally prepared for tattoo use, and delivered in high-resolution formats. Each product includes cultural context and meaning explanations to ensure clients fully understand what they wear permanently.","image3":"/project-img/laninkstudio_3.webp","description3":"The custom service is designed for clients who want something truly personal. Each request begins with understanding the client's story, intention, and aesthetic preference. From there, I develop a handwritten calligraphy piece in the most suitable script style, ensuring linguistic accuracy, cultural respect, and artistic integrity. The result is not just a word—but a deeply connected visual identity.","image4":"/project-img/laninkstudio_4.webp","description4":"Beyond the shop, the blog section explores the history, evolution, and philosophy of Chinese calligraphy. It educates readers on script styles, symbolism, translation nuances, and tattoo considerations. The goal is to shift the conversation from \"what does this word mean?\" to \"what style and story truly represent me?\""},{"title":"Glossary - Smart Reader & Vocabulary","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project2-en/","thumbnail":"/project-img/glossary_preview.webp","description":"A smart document reader with integrated dictionary lookup, AI-powered definitions using Gemini, and an automated Ebbinghaus spaced-repetition vocabulary builder.","image1":"/project-img/glossary_1.jpg","description1":"This is the main page of the application.","image2":"/project-img/glossary_2.jpg","description2":"This is the reader page.","image3":"/project-img/glossary_3.jpg","description3":"This is the dictionary page, containing 4 different dictionary sources.","image4":"/project-img/glossary_4.jpg","description4":"This is the page displaying total number of words collected."},{"title":"Lán Ink Studio - Chinese Tattoo Design","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project3-en/","thumbnail":"/project-img/laninkstudio_preview.webp","description":"Lán Ink Studio is a specialized online shop for authentic, handwritten Chinese calligraphy tattoo designs, offering ready-made and custom designs, detailed cultural context, and tattoo-artist-ready files.","image1":"/project-img/laninkstudio_1.webp","description1":"This the homepage.","image2":"/project-img/laninkstudio_2.webp","description2":"This the product page.","image3":"/project-img/laninkstudio_3.webp","description3":"This the blog page.","image4":"/project-img/laninkstudio_4.webp","description4":"This the custom request page."},{"title":"Glossary - Smart Reader & Vocabulary","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project4-en/","thumbnail":"/project-img/glossary_preview.webp","description":"A smart document reader with integrated dictionary lookup, AI-powered definitions using Gemini, and an automated Ebbinghaus spaced-repetition vocabulary builder.","image1":"/project-img/glossary_1.jpg","description1":"This is the main page of the application.","image2":"/project-img/glossary_2.jpg","description2":"This is the reader page.","image3":"/project-img/glossary_3.jpg","description3":"This is the dictionary page, containing 4 different dictionary sources.","image4":"/project-img/glossary_4.jpg","description4":"This is the page displaying total number of words collected."},{"title":"Lán Ink Studio - Chinese Tattoo Design","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project5-en/","thumbnail":"/project-img/laninkstudio_preview.webp","description":"Lán Ink Studio is a specialized online shop for authentic, handwritten Chinese calligraphy tattoo designs, offering ready-made and custom designs, detailed cultural context, and tattoo-artist-ready files.","image1":"/project-img/laninkstudio_1.webp","description1":"This the homepage.","image2":"/project-img/laninkstudio_2.webp","description2":"This the product page.","image3":"/project-img/laninkstudio_3.webp","description3":"This the blog page.","image4":"/project-img/laninkstudio_4.webp","description4":"This the custom request page."},{"title":"Glossary - Smart Reader & Vocabulary","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project6-en/","thumbnail":"/project-img/glossary_preview.webp","description":"A smart document reader with integrated dictionary lookup, AI-powered definitions using Gemini, and an automated Ebbinghaus spaced-repetition vocabulary builder.","image1":"/project-img/glossary_1.jpg","description1":"This is the main page of the application.","image2":"/project-img/glossary_2.jpg","description2":"This is the reader page.","image3":"/project-img/glossary_3.jpg","description3":"This is the dictionary page, containing 4 different dictionary sources.","image4":"/project-img/glossary_4.jpg","description4":"This is the page displaying total number of words collected."}]</script>
+<script type="application/json" id="projectsPageDataCn">[{"title":"兰墨工作室 - 中文纹身设计","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project1-cn/","thumbnail":"/project-img/laninkstudio_preview.webp","description":"兰墨工作室是一家专注于原创中文书法纹身设计的线上品牌。它的创立初衷，是在语言、文化与个体身份之间搭建桥梁——提供有历史根基与文化内涵的作品，而非简单的直译或随意字体拼贴。每一件设计都由我亲笔书写，结合文化考证与审美考量，为追求深度与真实感的全球纹身爱好者而创作。","image1":"/project-img/laninkstudio_1.webp","description1":"兰墨工作室是一家专门提供手写中文书法纹身图案的在线商店，提供现成的和定制的图案、详细的文化背景以及可供纹身师直接使用的设计文件。","image2":"/project-img/laninkstudio_2.webp","description2":"兰墨工作室是一家专门提供手写中文书法纹身图案的在线商店，提供现成的和定制的图案、详细的文化背景以及可供纹身师直接使用的设计文件。","image3":"/project-img/laninkstudio_3.webp","description3":"兰墨工作室是一家专门提供手写中文书法纹身图案的在线商店，提供现成的和定制的图案、详细的文化背景以及可供纹身师直接使用的设计文件。","image4":"/project-img/laninkstudio_4.webp","description4":"兰墨工作室是一家专门提供手写中文书法纹身图案的在线商店，提供现成的和定制的图案、详细的文化背景以及可供纹身师直接使用的设计文件。"},{"title":"英彗阅读器 - 在阅读中记忆单词","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project2-cn/","thumbnail":"/project-img/glossary_preview.webp","description":"一款智能文档阅读器，集成了词典查找功能、使用 Gemini 的 AI 驱动定义以及自动化的艾宾浩斯间隔重复词汇构建器。","image1":"/project-img/glossary_1.jpg","description1":"这是APP主页面。","image2":"/project-img/glossary_2.jpg","description2":"这是阅读器页面。","image3":"/project-img/glossary_3.jpg","description3":"这是单词查询页面。","image4":"/project-img/glossary_4.jpg","description4":"这是单词本页面。"},{"title":"兰墨工作室 - 中文纹身设计","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project3-cn/","thumbnail":"/project-img/laninkstudio_preview.webp","description":"兰墨工作室是一家专门提供手写中文书法纹身图案的在线商店，提供现成的和定制的图案、详细的文化背景以及可供纹身师直接使用的设计文件。","image1":"/project-img/laninkstudio_1.webp","description1":"这是网站主页。","image2":"/project-img/laninkstudio_2.webp","description2":"这是产品详情页。","image3":"/project-img/laninkstudio_3.webp","description3":"这是博客页面。","image4":"/project-img/laninkstudio_4.webp","description4":"这是定制设计页面。"},{"title":"兰墨工作室 - 中文纹身设计","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project5-cn/","thumbnail":"/project-img/laninkstudio_preview.webp","description":"兰墨工作室是一家专门提供手写中文书法纹身图案的在线商店，提供现成的和定制的图案、详细的文化背景以及可供纹身师直接使用的设计文件。","image1":"/project-img/laninkstudio_1.webp","description1":"这是网站主页。","image2":"/project-img/laninkstudio_2.webp","description2":"这是产品详情页。","image3":"/project-img/laninkstudio_3.webp","description3":"这是博客页面。","image4":"/project-img/laninkstudio_4.webp","description4":"这是定制设计页面。"},{"title":"英彗阅读器 - 在阅读中记忆单词","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project4-cn/","thumbnail":"/project-img/glossary_preview.webp","description":"一款智能文档阅读器，集成了词典查找功能、使用 Gemini 的 AI 驱动定义以及自动化的艾宾浩斯间隔重复词汇构建器。","image1":"/project-img/glossary_1.jpg","description1":"这是APP主页面。","image2":"/project-img/glossary_2.jpg","description2":"这是阅读器页面。","image3":"/project-img/glossary_3.jpg","description3":"这是单词查询页面。","image4":"/project-img/glossary_4.jpg","description4":"这是单词本页面。"},{"title":"英彗阅读器 - 在阅读中记忆单词","projectUrl":"https://www.baidu.com/","postUrl":"/uncategorized/project6-cn/","thumbnail":"/project-img/glossary_preview.webp","description":"一款智能文档阅读器，集成了词典查找功能、使用 Gemini 的 AI 驱动定义以及自动化的艾宾浩斯间隔重复词汇构建器。","image1":"/project-img/glossary_1.jpg","description1":"这是APP主页面。","image2":"/project-img/glossary_2.jpg","description2":"这是阅读器页面。","image3":"/project-img/glossary_3.jpg","description3":"这是单词查询页面。","image4":"/project-img/glossary_4.jpg","description4":"这是单词本页面。"}]</script>
+
+<script>
+(function() {
+  const INTERVAL_MS = 5000;
+  const VISIBLE_BUTTONS = 5;
+
+  function getLang() {
+    if (window.__getLang) return window.__getLang();
+    var lang = document.documentElement.getAttribute('lang');
+    return (lang === 'zh-CN' ? 'zh-CN' : 'en');
+  }
+
+  function getStrings() {
+    return (window.__i18n && window.__i18n[getLang()]) || (window.__i18n && window.__i18n.en) || {};
+  }
+
+  function getData() {
+    var enEl = document.getElementById('projectsPageDataEn');
+    var cnEl = document.getElementById('projectsPageDataCn');
+    try {
+      var en = enEl && enEl.textContent ? JSON.parse(enEl.textContent) : [];
+      var cn = cnEl && cnEl.textContent ? JSON.parse(cnEl.textContent) : [];
+      return getLang() === 'zh-CN' ? cn : en;
+    } catch (e) { return []; }
+  }
+
+  function buildCards(project) {
+    if (!project) return { imageCards: [], descCards: [] };
+    var strings = getStrings();
+    var openProject = (strings['buttons.click_to_open'] != null ? strings['buttons.click_to_open'] : 'Click to Open');
+    var wantMore = (strings['projects_page.want_more'] != null ? strings['projects_page.want_more'] : 'Want to know more about this project?');
+    var openPost = (strings['buttons.view_more'] != null ? strings['buttons.view_more'] : 'View more');
+
+    var imageCards = [];
+    var descCards = [];
+
+    // Card 0: thumbnail + description + open project button
+    var thumbHtml = project.thumbnail
+      ? '<img src="' + project.thumbnail.replace(/"/g, '&quot;') + '" alt="">'
+      : '<div class="projects-image-placeholder"><i class="fa-solid fa-image"></i></div>';
+    imageCards.push(thumbHtml);
+    descCards.push(
+      '<h3 class="projects-desc-title">' + (project.title || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</h3>' +
+      '<p class="projects-desc-text">' + (project.description || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</p>' +
+      '<a href="' + (project.projectUrl || '#').replace(/"/g, '&quot;') + '" target="_blank" rel="noopener" class="project-card-link">' +
+      '<i class="fa-solid fa-external-link-alt"></i> ' + openProject + '</a>'
+    );
+
+    // Cards 1-4: imageN + descriptionN (no button)
+    for (var n = 1; n <= 4; n++) {
+      var img = project['image' + n];
+      var desc = project['description' + n] || '';
+      var imgHtml = img
+        ? '<img src="' + img.replace(/"/g, '&quot;') + '" alt="">'
+        : '<div class="projects-image-placeholder"><i class="fa-solid fa-image"></i></div>';
+      imageCards.push(imgHtml);
+      descCards.push(
+        '<p class="projects-desc-text">' + desc.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</p>' +
+        '<a href="' + (project.projectUrl || '#').replace(/"/g, '&quot;') + '" target="_blank" rel="noopener" class="project-card-link">' +
+      '<i class="fa-solid fa-external-link-alt"></i> ' + openProject + '</a>'
+      );
+    }
+
+    // Card 5: "Want to know more?" + open post button
+    imageCards.push(
+      '<div class="projects-want-more-block">' +
+      '<p class="projects-want-more-text">' + wantMore.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</p>' +
+      '<a href="' + (project.postUrl || '#').replace(/"/g, '&quot;') + '" class="project-card-link">' +
+      '<i class="fa-solid fa-book-open"></i> ' + openPost + '</a>' +
+      '</div>'
+    );
+    descCards.push('<p class="projects-desc-text"></p>'); // empty right column for last card
+
+    return { imageCards: imageCards, descCards: descCards };
+  }
+
+  var state = {
+    projects: [],
+    currentProjectIndex: 0,
+    currentCardIndex: 0,
+    cardCount: 0,
+    autoTimer: null
+  };
+
+  var imageTrack = document.getElementById('projectsImageTrack');
+  var descTrack = document.getElementById('projectsDescTrack');
+  var imageDots = document.getElementById('projectsImageDots');
+  var strip = document.getElementById('projectsStrip');
+  var navLeft = document.getElementById('projectsNavLeft');
+  var navRight = document.getElementById('projectsNavRight');
+
+  if (!imageTrack || !descTrack) return;
+
+  function renderProjectButtons() {
+    if (!strip) return;
+    var list = state.projects;
+    strip.innerHTML = list.map(function(p, i) {
+      var active = i === state.currentProjectIndex ? ' is-active' : '';
+      return '<button type="button" class="projects-strip-btn' + active + '" data-index="' + i + '">' +
+        (p.title || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</button>';
+    }).join('');
+  }
+
+  function goToCard(index) {
+    if (state.cardCount <= 0) return;
+    state.currentCardIndex = (index + state.cardCount) % state.cardCount;
+    var tx = -state.currentCardIndex * 100;
+    imageTrack.style.transform = 'translateX(' + tx + '%)';
+    descTrack.style.transform = 'translateX(' + tx + '%)';
+    var dots = document.querySelectorAll('.projects-image-dot');
+    for (var i = 0; i < dots.length; i++) {
+      dots[i].classList.toggle('is-active', i === state.currentCardIndex);
+      dots[i].setAttribute('aria-current', i === state.currentCardIndex ? 'true' : 'false');
+    }
+  }
+
+  function startAuto() {
+    if (state.autoTimer) clearInterval(state.autoTimer);
+    state.autoTimer = null;
+    if (state.cardCount > 1) {
+      state.autoTimer = setInterval(function() {
+        goToCard(state.currentCardIndex + 1);
+      }, INTERVAL_MS);
+    }
+  }
+  function stopAuto() {
+    if (state.autoTimer) clearInterval(state.autoTimer);
+    state.autoTimer = null;
+  }
+
+  function setProject(index) {
+    var list = state.projects;
+    if (!list.length) return;
+    state.currentProjectIndex = (index + list.length) % list.length;
+    var project = list[state.currentProjectIndex];
+    var cards = buildCards(project);
+    state.cardCount = cards.imageCards.length;
+
+    imageTrack.innerHTML = cards.imageCards.map(function(html, i) {
+      var isLast = (i === cards.imageCards.length - 1);
+      return '<div class="projects-image-slide' + (isLast ? ' projects-slide-last' : '') + '">' + html + '</div>';
+    }).join('');
+    descTrack.innerHTML = cards.descCards.map(function(html) {
+      return '<div class="projects-desc-slide">' + (html ? html : '') + '</div>';
+    }).join('');
+
+    imageDots.innerHTML = '';
+    for (var i = 0; i < state.cardCount; i++) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'projects-image-dot' + (i === 0 ? ' is-active' : '');
+      btn.setAttribute('data-index', String(i));
+      btn.setAttribute('aria-label', 'Slide ' + (i + 1));
+      btn.setAttribute('aria-current', i === 0 ? 'true' : 'false');
+      imageDots.appendChild(btn);
+    }
+
+    state.currentCardIndex = 0;
+    goToCard(0);
+    startAuto();
+    renderProjectButtons();
+
+    imageDots.querySelectorAll('.projects-image-dot').forEach(function(btn, i) {
+      btn.addEventListener('click', function() {
+        goToCard(i);
+        startAuto();
+      });
+    });
+  }
+
+  function init() {
+    state.projects = getData();
+    if (!state.projects.length) {
+      var strings = getStrings();
+      var empty = (strings['projects_page.empty'] != null ? strings['projects_page.empty'] : 'No projects yet.');
+      imageTrack.innerHTML = '<div class="projects-desc-slide"><p class="projects-desc-text">' + empty + '</p></div>';
+      descTrack.innerHTML = '<div class="projects-desc-slide"></div>';
+      imageDots.innerHTML = '';
+      if (strip) strip.innerHTML = '';
+      return;
+    }
+    setProject(0);
+  }
+
+  if (strip) {
+    strip.addEventListener('click', function(e) {
+      var btn = e.target.closest('.projects-strip-btn');
+      if (!btn) return;
+      var idx = parseInt(btn.getAttribute('data-index'), 10);
+      if (!isNaN(idx)) setProject(idx);
+    });
+  }
+
+  var carouselWrap = document.getElementById('projectsImageCarousel');
+  if (carouselWrap) {
+    carouselWrap.addEventListener('mouseenter', stopAuto);
+    carouselWrap.addEventListener('mouseleave', startAuto);
+  }
+
+  if (navLeft) {
+    navLeft.addEventListener('click', function() {
+      var list = state.projects;
+      if (!list.length) return;
+      var wrap = document.querySelector('.projects-strip-wrap');
+      if (wrap) wrap.scrollBy({ left: -wrap.clientWidth, behavior: 'smooth' });
+    });
+  }
+  if (navRight) {
+    navRight.addEventListener('click', function() {
+      var wrap = document.querySelector('.projects-strip-wrap');
+      if (wrap) wrap.scrollBy({ left: wrap.clientWidth, behavior: 'smooth' });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+  document.addEventListener('lang-applied', function(e) {
+    state.projects = getData();
+    if (state.projects.length) setProject(state.currentProjectIndex);
+    else init();
+  });
+})();
+</script>
+
+  </main>
+
+  <footer style="text-align: center;">
+    <p>
+      <i class="fa-solid fa-cloud" style="color: #fff;"></i><br>
+      &copy; 2026
+        <span data-i18n="author" class="i18n-text"></span>
+          <br><span data-i18n="footer_description" class="i18n-text"></span>
+    </p>
+  </footer>
+
+  <script>
+    (function() {
+      var LANG_KEY = 'site-lang';
+      var i18n = {"en":{"title":"Lan's Notebook","subtitle":"The Life Journal of an Earthling","description":"Welcome to my notebook, where I record everything I love about the world and about living on Earth.","introduction":"Hi, I'm ","author":"Lan","language":"en","menu.home":"Home","menu.blog":"Blog","menu.shop":"Market","menu.about":"About Me","cart":"Cart","achievements_bento":[{"text":"Kept track of monthly calendar journals for over 9 years"},{"text":"Built an aesthetic and functional online shopping website within 30 days"},{"text":"Maintained a consistent workout routine every other day for over 2 years"}],"footer_description":"Living on Earth, dreaming in the cloud.","blog_page.title":"My Blog","blog_page.description":"As an earthling, all I do in my life is ...","memories_page.title":"Living In The Moment","memories_page.description":"Capturing the moments that make life worth living.","memories_page.empty":"Put images into /source/memories-en/ or /source/memories-cn/","projects_page.title":"My Projects","projects_page.want_more":"Want to know more about this project?","projects_page.empty":"No projects yet.","shop_page.title":"Today's Recommendation","shop_page.description":"Discover unique digital products crafted with care.","shop_page.button_text":"View All Products","shop_page.cart_button_text":"Add to Cart","product_page.title":"My Shop","product_page.description":"Browse all product categories","product_categories.design-art":"Design Art","product_categories.web-development":"Web Development Kit","product_categories.instruction-videos":"Instruction Videos","sections.what_i_love":"What I'd Love to do","sections.things_proud_of":"Things I'm Proud of","sections.moments_alive":"Moments I Felt Alive","sections.things_made":"Things I've Made","sections.things_recommend":"Things I Recommend","buttons.view_more":"View more","buttons.click_to_open":"Click to Open","buttons.open":"Open","recommendation.type":"Type","recommendation.selection":"Selection","recommendation.last_stored":"Last Stored","recommendation.notes_header":"Notes","recommendation.type_label":"Type:","recommendation.extra_label_author":"Author","recommendation.extra_label_artist":"Artist","recommendation.extra_label_year":"Year","post_meta.categories":"Categories","post_meta.tags":"Tags","tags.reading_notes":"Reading notes","tags.daily_sparks":"Daily sparks","tags.monthly_review":"Monthly review","tags.note_taking":"Note Taking","tags.religions":"Religions","tags.life_kits":"Life Kits","tags.languages":"Languages","tags.calligraphy_art":"Calligraphy art","tags.paintings":"Paintings","tags.web_development":"Web development","tags.vibe_coding":"Vibe coding","tag_descriptions.reading_notes":"Traces left by other minds passing through mine.","tag_descriptions.daily_sparks":"Thoughts drifting like clouds.","tag_descriptions.monthly_review":"Looking back at the Earth time that has just passed.","tag_descriptions.note_taking":"Observations captured before they disappear.","tag_descriptions.religions":"Ways humans search for meaning beyond the visible world.","tag_descriptions.life_kits":"Tools and ideas for surviving daily life on Earth.","tag_descriptions.languages":"Different sounds humans use to name the same world.","tag_descriptions.calligraphy_art":"Movement, ink, and breath meeting on paper.","tag_descriptions.paintings":"Colors arranged to record a feeling of being alive.","tag_descriptions.web_development":"Building bridges between the digital and the real world.","tag_descriptions.vibe_coding":"Code with a feeling, not just logic.","selected_blog_categories.journaling":"Journaling","selected_blog_categories.learning":"Learning","selected_blog_categories.creating":"Creating","selected_blog_categories.coding":"Coding","selected_blog_categories_descriptions.journaling":"Fragments of daily life, inner weather, and passing thoughts on Earth.","selected_blog_categories_descriptions.learning":"Observations collected while trying to understand how this world works.","selected_blog_categories_descriptions.creating":"Things shaped by hand to make inner experiences visible.","selected_blog_categories_descriptions.coding":"Code that transforms ideas into reality.","menu.market":"Market","menu.about_me":"About Me","achievements_bento_text_0":"Kept track of monthly calendar journals for over 9 years","achievements_bento_text_1":"Built an aesthetic and functional online shopping website within 30 days","achievements_bento_text_2":"Maintained a consistent workout routine every other day for over 2 years"},"zh-CN":{"title":"生活笔记","subtitle":"地球漫游指南","description":"欢迎来到我的个人博物馆——这里记录着我作为一个人类，一生中最想留下的痕迹。","introduction":"嗨，我是","author":"秋边边","language":"zh-CN","menu.home":"首页","menu.blog":"博客","menu.shop":"商店","menu.about":"关于博主","cart":"购物车","achievements_bento":[{"text":"记录每月日历超过9年"},{"text":"30天内搭建了一个在线购物网站"},{"text":"坚持隔天健身一次的routine超过2年"}],"footer_description":"谢谢你的到访，欢迎再来~","blog_page.title":"我的博客","blog_page.description":"快来探索我的博客吧！","memories_page.title":"我的瞬间","memories_page.description":"捕捉那些值得留住的瞬间。","memories_page.empty":"请将图片放入 /source/memories-en/ 或 /source/memories-cn/","projects_page.title":"我的作品","projects_page.want_more":"想了解更多关于这个项目？","projects_page.empty":"暂无项目。","shop_page.title":"今日推荐","shop_page.description":"欢迎来到我的数字商店！","shop_page.button_text":"全部商品","shop_page.cart_button_text":"加入购物车","product_page.title":"我的商店","product_page.description":"走过路过不要错过~","product_categories.design-art":"设计艺术","product_categories.web-development":"网页开发","product_categories.instruction-videos":"教学视频","sections.what_i_love":"我的笔记","sections.things_proud_of":"我的成就","sections.moments_alive":"我的瞬间","sections.things_made":"我的作品","sections.things_recommend":"我的推荐","buttons.view_more":"查看更多","buttons.click_to_open":"浏览","buttons.open":"查看","recommendation.type":"类型","recommendation.selection":"作品名称","recommendation.last_stored":"录入时间","recommendation.notes_header":"观后感","recommendation.type_label":"类型：","recommendation.extra_label_author":"作者","recommendation.extra_label_artist":"歌手","recommendation.extra_label_year":"年份","post_meta.categories":"分类","post_meta.tags":"标签","tags.reading_notes":"阅读笔记","tags.daily_sparks":"日记随笔","tags.monthly_review":"月度回顾","tags.note_taking":"笔记系统","tags.religions":"宗教","tags.life_kits":"人类生存指南","tags.languages":"语言学习","tags.calligraphy_art":"书法","tags.paintings":"绘画","tags.web_development":"网页开发","tags.vibe_coding":"氛围编程","tag_descriptions.reading_notes":"他人思想经过我时，留下的痕迹。","tag_descriptions.daily_sparks":"像云一样飘着的念头。","tag_descriptions.monthly_review":"过去的一个月干了点啥呢。","tag_descriptions.note_taking":"像姑姑教过儿捉鸟一样捕捉那些转瞬即逝的灵感。","tag_descriptions.religions":"人类仰望世界时，提出的不同答案。","tag_descriptions.life_kits":"真正聪明的人才能学会的东西。","tag_descriptions.languages":"人类用来呼唤同一个世界的不同声音。","tag_descriptions.calligraphy_art":"手的动作，墨的流动，呼吸的节奏。","tag_descriptions.paintings":"把当下的感觉，留在颜色里。","tag_descriptions.web_development":"我的赛博之家。","tag_descriptions.vibe_coding":"别先想对不对，先顺着感觉写。","selected_blog_categories.journaling":"日记","selected_blog_categories.learning":"学习","selected_blog_categories.creating":"创作","selected_blog_categories.coding":"编程","selected_blog_categories_descriptions.journaling":"关于我的日常、情绪与一些缓慢流动的思绪。","selected_blog_categories_descriptions.learning":"关于我试图理解世界这件事情。","selected_blog_categories_descriptions.creating":"关于我的创造，手作与记录。","selected_blog_categories_descriptions.coding":"将想法转化为现实的代码。","menu.market":"商店","menu.about_me":"关于博主","achievements_bento_text_0":"记录每月日历超过9年","achievements_bento_text_1":"30天内搭建了一个在线购物网站","achievements_bento_text_2":"坚持隔天健身一次的routine超过2年"}};
+      function getLang() {
+        var q = new URLSearchParams(window.location.search).get('lang');
+        if (q === 'zh-CN' || q === 'en') return q;
+        try { return localStorage.getItem(LANG_KEY) || 'en'; } catch (e) { return 'en'; }
+      }
+      function setLang(lang) {
+        try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+        var url = new URL(window.location.href);
+        if (lang === 'en') url.searchParams.delete('lang');
+        else url.searchParams.set('lang', lang);
+        if (window.history && window.history.replaceState) window.history.replaceState({}, '', url.toString());
+        applyLang(lang);
+      }
+      function applyLang(lang) {
+        var root = document.documentElement;
+        if (root) root.setAttribute('lang', lang === 'zh-CN' ? 'zh-CN' : 'en');
+        var strings = i18n[lang] || i18n.en;
+        var body = document.body;
+        var label = document.getElementById('lang-switch-label');
+        if (label) label.textContent = lang === 'zh-CN' ? 'EN' : 'CN';
+        var isHome = !window.location.pathname || window.location.pathname === '/' || /\/index\.html$/i.test(window.location.pathname);
+        if (strings.title && strings.subtitle && isHome) document.title = strings.title + ' | ' + strings.subtitle;
+        else if (body) {
+          var te = body.getAttribute('data-page-title-en');
+          var tz = body.getAttribute('data-page-title-zh');
+          if (te != null && tz != null) document.title = lang === 'zh-CN' ? tz : te;
+        }
+        var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');
+        for (var i = 0, n = nodes.length; i < n; i++) {
+          var el = nodes[i];
+          var key = el.getAttribute('data-i18n');
+          if (key != null) {
+            var text = strings[key];
+            if (text != null) {
+              var span = el.querySelector('.i18n-text');
+              if (span) span.textContent = text;
+              else el.textContent = text;
+            }
+          } else el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+        }
+        document.dispatchEvent(new CustomEvent('lang-applied', { detail: { lang: lang } }));
+      }
+      window.switchLang = function() { setLang(getLang() === 'en' ? 'zh-CN' : 'en'); };
+      window.__i18n = i18n;
+      window.__getLang = getLang;
+      window.__applyLang = applyLang;
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function() { applyLang(getLang()); });
+      else applyLang(getLang());
+    })();
+  </script>
+  
+  <!-- Snipcart JavaScript -->
+  <script async src="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.js"></script>
+  <div hidden id="snipcart" 
+       data-api-key="YOUR_SNIPCART_API_KEY"
+       data-config-modal-style="side"
+       data-config-add-product-behavior="none"
+       data-config-currency="usd"
+       data-config-payment-methods="card,alipay">
+  </div>
+  
+  <!-- Update cart count (deferred so Snipcart async load does not block) -->
+  <script>
+    function updateCartCount() {
+      if (typeof Snipcart === 'undefined') return;
+      var c = Snipcart.store.getState().cart.items.count;
+      var el = document.querySelector('.snipcart-items-count');
+      if (el) { el.textContent = c; el.style.display = c > 0 ? 'flex' : 'none'; }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof Snipcart !== 'undefined') Snipcart.store.subscribe(updateCartCount);
+      else setTimeout(function() { if (typeof Snipcart !== 'undefined') { Snipcart.store.subscribe(updateCartCount); updateCartCount(); } }, 600);
+    });
+  </script>
+
+  <script>
+    (function() {
+      var header = document.querySelector('header.site-header');
+      if (!header) return;
+
+      var toggle = header.querySelector('.nav-toggle');
+      var nav = header.querySelector('#site-nav');
+      var backdrop = header.querySelector('.nav-backdrop');
+      if (!toggle || !nav) return;
+
+      function updateHeaderHeightVar() {
+        // Use sticky header height (includes padding); drawer starts below it
+        var h = header.offsetHeight || 0;
+        document.documentElement.style.setProperty('--site-header-height', h + 'px');
+      }
+
+      updateHeaderHeightVar();
+
+      function lockScroll() {
+        var scrollY = window.scrollY || document.documentElement.scrollTop || 0;
+        document.body.dataset.navScrollY = String(scrollY);
+        document.body.classList.add('nav-locked');
+        document.body.style.position = 'fixed';
+        document.body.style.top = '-' + scrollY + 'px';
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.width = '100%';
+      }
+
+      function unlockScroll() {
+        var raw = document.body.dataset.navScrollY || '0';
+        var scrollY = parseInt(raw, 10) || 0;
+        document.body.classList.remove('nav-locked');
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        document.body.style.width = '';
+        delete document.body.dataset.navScrollY;
+        window.scrollTo(0, scrollY);
+      }
+
+      function setOpen(open) {
+        var isOpen = header.classList.contains('nav-open');
+        if (open === isOpen) return;
+        header.classList.toggle('nav-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (open) lockScroll();
+        else unlockScroll();
+      }
+
+      toggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        setOpen(!header.classList.contains('nav-open'));
+      });
+
+      nav.addEventListener('click', function(e) {
+        var link = e.target && e.target.closest ? e.target.closest('a') : null;
+        if (link) setOpen(false);
+      });
+
+      document.addEventListener('click', function(e) {
+        if (header.classList.contains('nav-open') && !header.contains(e.target)) setOpen(false);
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && header.classList.contains('nav-open')) setOpen(false);
+      });
+
+      window.addEventListener('resize', function() {
+        updateHeaderHeightVar();
+        if (window.innerWidth > 768 && header.classList.contains('nav-open')) setOpen(false);
+      });
+
+      if (backdrop) {
+        backdrop.addEventListener('click', function() {
+          if (header.classList.contains('nav-open')) setOpen(false);
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>
