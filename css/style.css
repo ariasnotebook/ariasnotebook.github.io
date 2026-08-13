@@ -69,8 +69,8 @@
   --text: #000000;      
   --radius: 25px; 
   --article-background: #cdbc86;     
-} */
-
+} 
+*/
 /* :root {
   --hover: #206833;
   --hover-darker: #174b2a;    
@@ -2898,6 +2898,229 @@ button.snipcart-add-item i,
   }
 }
 
+
+/* -------------- Recent edits floating widget -------------- */
+.recent-edits-widget {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  z-index: 900;
+  width: 52px;
+  height: 52px;
+  font-family: 'Quicksand', 'Fredoka', sans-serif;
+}
+
+.recent-edits-fab {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--hover);
+  color: #fff;
+  box-shadow: 0 10px 28px color-mix(in srgb, var(--hover) 35%, transparent);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.85);
+  transition: transform 0.28s ease, opacity 0.22s ease, box-shadow 0.25s ease, background 0.2s ease;
+  z-index: 2;
+}
+
+.recent-edits-fab:hover,
+.recent-edits-widget.is-collapsed .recent-edits-fab:hover {
+  background: var(--icon);
+}
+
+.recent-edits-panel {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(320px, calc(100vw - 28px));
+  background: color-mix(in srgb, var(--block) 92%, #fff);
+  border: 1.5px solid color-mix(in srgb, var(--text) 14%, transparent);
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(33, 103, 107, 0.18);
+  overflow: hidden;
+  transform: scale(1);
+  transform-origin: bottom right;
+  opacity: 1;
+  transition:
+    transform 0.4s cubic-bezier(0.32, 0.72, 0, 1),
+    opacity 0.28s ease,
+    border-radius 0.4s ease;
+  z-index: 1;
+}
+
+.recent-edits-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  background: color-mix(in srgb, var(--base) 55%, var(--block));
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 10%, transparent);
+}
+
+.recent-edits-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.recent-edits-title i {
+  color: var(--icon);
+}
+
+.recent-edits-collapse-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.recent-edits-collapse-btn:hover {
+  background: color-mix(in srgb, var(--hover) 16%, transparent);
+  color: var(--hover);
+}
+
+.recent-edits-list {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.recent-edits-item + .recent-edits-item {
+  margin-top: 4px;
+}
+
+.recent-edits-link {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.recent-edits-link:hover {
+  background: color-mix(in srgb, var(--base) 45%, transparent);
+  transform: translateX(-2px);
+}
+
+.recent-edits-time {
+  display: block;
+  font-size: 0.78rem;
+  opacity: 0.72;
+  margin-bottom: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.recent-edits-matter {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.recent-edits-matter > i {
+  margin-top: 2px;
+  color: var(--icon);
+  flex-shrink: 0;
+}
+
+.recent-edits-matter [data-i18n] {
+  font-weight: 700;
+}
+
+.recent-edits-item-title {
+  min-width: 0;
+  flex: 1 1 100%;
+  padding-left: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.recent-edits-empty {
+  margin: 0;
+  padding: 16px;
+  font-size: 0.9rem;
+  color: var(--text);
+  opacity: 0.75;
+}
+
+/* Collapsed: panel shrinks into the bottom-right icon */
+.recent-edits-widget.is-collapsed .recent-edits-panel {
+  transform: scale(0);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.recent-edits-widget.is-collapsed .recent-edits-fab {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+  transition-delay: 0.12s;
+}
+
+.recent-edits-widget.is-expanded .recent-edits-fab {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.85);
+  transition-delay: 0s;
+}
+
+@media (max-width: 640px) {
+  .recent-edits-widget {
+    right: 12px;
+    bottom: 16px;
+  }
+
+  .recent-edits-panel {
+    width: min(300px, calc(100vw - 24px));
+  }
+
+  /* Before JS marks the widget ready: stay collapsed with no open animation */
+  .recent-edits-widget.is-expanded:not(.is-ready) .recent-edits-panel {
+    transform: scale(0);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: none;
+  }
+
+  .recent-edits-widget.is-expanded:not(.is-ready) .recent-edits-fab {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: none;
+  }
+}
 
 /* --------------Footer starts-------------- */
 footer {
