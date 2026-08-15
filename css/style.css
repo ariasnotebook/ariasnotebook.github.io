@@ -42,9 +42,9 @@
     var(--article-cover) 0%,
     rgba(252, 243, 229, 0.68) 100%
   );
-  --article-title-highlight: #f3dbc6;
-  --article-title-badge: #eed4bf;
-  --article-title-color: #523e39;
+  --article-title-highlight: #e6bfa0;
+  --article-title-badge: #e1b896;
+  --article-title-color: #44332e;
   --article-content-text-color: #4c3d38;
   --article-breadcrumb-current-color: #ab958d;
 
