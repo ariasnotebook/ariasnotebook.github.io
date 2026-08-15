@@ -2364,34 +2364,6 @@ body.recommendation-modal-open {
   overflow: visible;
 }
 
-.article-tape {
-  position: absolute;
-  width: 78px;
-  height: 22px;
-  background: repeating-linear-gradient(
-    90deg,
-    #f0d4b4 0 10px,
-    #e7c8a4 10px 12px
-  );
-  border-radius: 2px;
-  box-shadow: 0 1px 4px rgba(113, 13, 28, 0.12);
-  opacity: 0.9;
-  z-index: 3;
-  pointer-events: none;
-}
-
-.article-tape-tl {
-  top: 14px;
-  left: -10px;
-  transform: rotate(-18deg);
-}
-
-.article-tape-br {
-  bottom: 22px;
-  right: -12px;
-  transform: rotate(-24deg);
-}
-
 .article-card-hearts {
   position: absolute;
   top: 16px;
@@ -2552,13 +2524,21 @@ body.recommendation-modal-open {
   opacity: 0.8;
 }
 
-.article-date {
+.article-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  width: 100%;
+  margin: 0;
+}
+
+.article-date,
+.article-views {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 8px;
-  width: 100%;
-  margin: 0;
   background: none;
   color: #9a8f86;
   padding: 0;
@@ -2566,8 +2546,15 @@ body.recommendation-modal-open {
   font-size: 0.95rem;
 }
 
-.article-date i {
+.article-date i,
+.article-views i {
   font-size: 0.9em;
+}
+
+.article-views #vercount_value_page_pv {
+  font-variant-numeric: tabular-nums;
+  min-width: 1.2em;
+  text-align: right;
 }
 
 .article-content {
@@ -2643,10 +2630,6 @@ body.recommendation-modal-open {
   }
   .article-card {
     padding: 18px 16px 28px;
-  }
-  .article-tape {
-    width: 56px;
-    height: 16px;
   }
   .article-content-container h1 {
     font-size: 1.6rem;
