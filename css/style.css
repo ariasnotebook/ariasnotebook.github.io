@@ -2527,17 +2527,17 @@ body.recommendation-modal-open {
 .article-meta {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: stretch;
   gap: 4px;
-  width: 100%;
-  margin: 0;
+  width: max-content;
+  margin-left: auto;
 }
 
 .article-date,
 .article-views {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 8px;
   background: none;
   color: #9a8f86;
@@ -2548,7 +2548,10 @@ body.recommendation-modal-open {
 
 .article-date i,
 .article-views i {
+  width: 1.1em;
+  flex: 0 0 1.1em;
   font-size: 0.9em;
+  text-align: center;
 }
 
 .article-views #vercount_value_page_pv {
@@ -2606,6 +2609,11 @@ body.recommendation-modal-open {
   }
   .article-content {
     font-size: 1.05rem;
+  }
+  .article-date,
+  .article-views {
+    font-size: 0.8rem;
+    gap: 6px;
   }
   .article-footer {
     font-size: 1.8rem;
