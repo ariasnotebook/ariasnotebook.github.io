@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/coding/how-i-started-my-first-vibe-coding-project/</loc>
+    <loc>http://example.com/coding/how-to-build-a-personal-website-in-10-minutes/</loc>
     
     <lastmod>2026-08-15</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/coding/how-to-build-a-personal-website-in-10-minutes/</loc>
+    <loc>http://example.com/coding/how-i-started-my-first-vibe-coding-project/</loc>
     
     <lastmod>2026-08-15</lastmod>
     
@@ -353,6 +353,15 @@
   </url>
   
   <url>
+    <loc>http://example.com/uncategorized/recommendation-the-accountant-en/</loc>
+    
+    <lastmod>2026-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/uncategorized/recommendation-the-accountant-cn/</loc>
     
     <lastmod>2026-02-01</lastmod>
@@ -371,7 +380,16 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-the-accountant-en/</loc>
+    <loc>http://example.com/uncategorized/recommendation-the-thrill-is-gone-cn/</loc>
+    
+    <lastmod>2026-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/recommendation-writing-the-blockbuster-novel-en/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -389,25 +407,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-the-thrill-is-gone-cn/</loc>
-    
-    <lastmod>2026-02-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/uncategorized/recommendation-writing-the-blockbuster-novel-cn/</loc>
-    
-    <lastmod>2026-02-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/recommendation-writing-the-blockbuster-novel-en/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -488,7 +488,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-anatomy-of-a-fall-cn/</loc>
+    <loc>http://example.com/uncategorized/recommendation-anatomy-of-a-fall-en/</loc>
     
     <lastmod>2024-01-28</lastmod>
     
@@ -497,7 +497,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-anatomy-of-a-fall-en/</loc>
+    <loc>http://example.com/uncategorized/recommendation-anatomy-of-a-fall-cn/</loc>
     
     <lastmod>2024-01-28</lastmod>
     
@@ -543,13 +543,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/languages/</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/note-taking/</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -557,7 +550,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/calligraphy-art/</loc>
+    <loc>http://example.com/tags/languages/</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -565,6 +558,13 @@
   
   <url>
     <loc>http://example.com/tags/reading-notes/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/calligraphy-art/</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -622,14 +622,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/instruction-videos/</loc>
+    <loc>http://example.com/categories/design-art/</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/design-art/</loc>
+    <loc>http://example.com/categories/instruction-videos/</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
