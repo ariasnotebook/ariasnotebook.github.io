@@ -163,7 +163,7 @@
 <li>Hexo</li>
 <li>An email address for your GitHub account</li>
 </ul>
-<p>If you don&#39;t have a GitHub account yet, let&#39;s create one first  ^o^&#x2F;</p>
+<p>If you don&#39;t have a GitHub account yet, let&#39;s create one first  ^o^</p>
 <h2 id="1-Create-a-GitHub-Account"><a href="#1-Create-a-GitHub-Account" class="headerlink" title="1. Create a GitHub Account"></a>1. Create a GitHub Account</h2><p>First, go to GitHub (<a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a>) and sign up for an account.</p>
 <p>When signing up, it&#39;s recommended that you use an email address you&#39;ll keep using for a long time, such as:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myblog@outlook.com</span><br></pre></td></tr></table></figure>
@@ -274,9 +274,7 @@
 <h2 id="7-Add-the-SSH-Key-to-GitHub"><a href="#7-Add-the-SSH-Key-to-GitHub" class="headerlink" title="7. Add the SSH Key to GitHub"></a>7. Add the SSH Key to GitHub</h2><p>Go to:</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\XXX\.ssh\</span><br></pre></td></tr></table></figure>
 
-<p>Find the file you just generated:</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id_ed25519_myblog.pub</span><br></pre></td></tr></table></figure>
-
+<p>Find the public key file <code>id_ed25519_myblog.pub</code> you just generated.</p>
 <p>You can use the following command to view it:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> ~/.ssh/id_ed25519_myblog.pub</span><br></pre></td></tr></table></figure>
 
@@ -528,30 +526,24 @@
 <p>如果只是个人博客，也可以直接按 Enter 跳过。</p>
 <p>完成之后，<code>.ssh</code> 文件夹中应该会出现两个文件：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">id_ed25519_myblog</span><br><span class="line">id_ed25519_myblog.pub</span><br></pre></td></tr></table></figure>
-<p>其中：</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id_ed25519_myblog</span><br></pre></td></tr></table></figure>
-<p>是<strong>私钥</strong>。</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id_ed25519_myblog.pub</span><br></pre></td></tr></table></figure>
-<p>是<strong>公钥</strong>。</p>
+<p>其中，<code>id_ed25519_myblog</code> 是<strong>私钥</strong>，<code>id_ed25519_myblog.pub</code> 是<strong>公钥</strong>。</p>
 <p>⚠️ 注意：不要把没有 <code>.pub</code> 后缀的私钥上传到 GitHub，也不要公开分享。</p>
 <h2 id="6-配置-SSH-Config"><a href="#6-配置-SSH-Config" class="headerlink" title="6. 配置 SSH Config"></a>6. 配置 SSH Config</h2><p>如果你只有一个 GitHub 账号，这一步通常比较简单。</p>
 <p>但如果你电脑上同时使用多个 GitHub 账号，建议配置 SSH <code>config</code> 文件。</p>
 <p>进入：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\XXX\.ssh\</span><br></pre></td></tr></table></figure>
-<p>如果没有 <code>config</code> 文件，就创建一个文件，名为：</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">config</span><br></pre></td></tr></table></figure>
-<p>然后添加：</p>
+<p>如果没有 <code>config</code> 文件，就创建一个名为 <code>config</code> 的文件，注意不要加任何文件后缀。</p>
+<p>然后在文件里添加：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host myblog.github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/id_ed25519_myblog</span><br></pre></td></tr></table></figure>
 <p>其中，myblog 应换成你自己的邮箱用户名（在后文里我真的不会再重复了！）</p>
 <h2 id="7-将-SSH-Key-添加到-GitHub"><a href="#7-将-SSH-Key-添加到-GitHub" class="headerlink" title="7. 将 SSH Key 添加到 GitHub"></a>7. 将 SSH Key 添加到 GitHub</h2><p>进入：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\XXX\.ssh\</span><br></pre></td></tr></table></figure>
-<p>找到刚才生成的：</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id_ed25519_myblog.pub</span><br></pre></td></tr></table></figure>
+<p>找到刚才生成的公钥 <code>id_ed25519_myblog.pub</code>  文件</p>
 <p>可以使用下面的命令查看它：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> ~/.ssh/id_ed25519_myblog.pub</span><br></pre></td></tr></table></figure>
 <p>你会看到一长串类似：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI...... myblog@outlook.com</span><br></pre></td></tr></table></figure>
-<p>你需要复制完整内容。</p>
+<p>然后复制完整的内容。</p>
 <p>接下来打开 GitHub：</p>
 <p><strong>Settings → SSH and GPG keys → New SSH key</strong>，然后填写<strong>Title</strong>。</p>
 <p>例如：</p>
