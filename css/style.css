@@ -158,7 +158,11 @@ code {
   color: var(--code-text-color);
   padding: 0.2em 0.4em;
   border-radius: 4px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); */
 }
 
 /* ----------Code block container styling---------- */
@@ -2454,7 +2458,6 @@ body.recommendation-modal-open {
   font-weight: 700;
   line-height: 1.35;
   text-align: left;
-  text-transform: capitalize;
   font-family: 'Quicksand', 'Roboto', sans-serif;
 }
 
@@ -2668,7 +2671,6 @@ html[lang="zh-CN"] .article-cover .article-title-text:not(:has(.lang-content)) {
   margin-top: 18px;
   margin-bottom: 12px;
   text-align: center;
-  text-transform: capitalize;
   font-family: 'Quicksand', 'Roboto', sans-serif;
 }
 
@@ -2677,9 +2679,20 @@ html[lang="zh-CN"] .article-cover .article-title-text:not(:has(.lang-content)) {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 15px;
-  margin-bottom: 20px;
-  text-transform: capitalize;
+  margin-bottom: 0;
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.45px solid #e1dad0;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.article-content-container h2::before {
+  content: '🍂';
+  color: var(--icon);
+  font-size: 0.75em;
+  font-weight: 1000;
+  display: inline-block;
+  transform: translateY(-0.15em);
+  margin-right: 0.4em;
 }
 
 .article-content-container h3 {
@@ -2688,12 +2701,16 @@ html[lang="zh-CN"] .article-cover .article-title-text:not(:has(.lang-content)) {
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 20px;
-  text-transform: capitalize;
+  padding-top: 1.5rem;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .article-content-container p, li {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.article-content-container a {
+  text-decoration: underline;
 }
 
 .article-title-text {
@@ -2732,7 +2749,6 @@ html[lang="zh-CN"] .article-cover .article-title-text:not(:has(.lang-content)) {
 }
 
 
-
 .article-content > pre {
   box-sizing: border-box;
   max-width: 100%;
@@ -2765,21 +2781,6 @@ html[lang="zh-CN"] .article-cover .article-title-text:not(:has(.lang-content)) {
   letter-spacing: inherit;
 }
 
-.article-content h2 {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding-top: 2.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1.45px solid #e1dad0;
-}
-
-.article-content h2::before {
-  content: '❀';
-  color: var(--icon);
-  font-size: 0.75em;
-  font-weight: 1000;
-}
 
 .article-footer {
   text-align: center;
@@ -2818,6 +2819,10 @@ html[lang="zh-CN"] .article-cover .article-title-text:not(:has(.lang-content)) {
     justify-content: center;
     text-align: center;
   }
+  .article-cover .article-title-text .lang-content[data-lang="en"],
+  html[lang="en"] .article-cover .article-title-text:not(:has(.lang-content)) {
+    font-size: 0.95em;
+  }
   .article-cover-main {
     flex: none;
     width: 100%;
@@ -2841,9 +2846,17 @@ html[lang="zh-CN"] .article-cover .article-title-text:not(:has(.lang-content)) {
   }
   .article-content-container h2 {
     font-size: 1.5rem;
+    margin-bottom: 0;
   }
   .article-content-container h3 {
     font-size: 1.3rem;
+    padding-top: 0.75rem;
+    margin-bottom: 0;
+  }
+  .article-content-container h3 + p,
+  .article-content-container h3 + ul,
+  .article-content-container h3 + ol {
+    margin-top: 0.2rem;
   }
   .article-content {
     font-size: 1.05rem;
