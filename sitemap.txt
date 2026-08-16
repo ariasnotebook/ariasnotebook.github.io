@@ -52,9 +52,9 @@ http://example.com/instruction-videos/product-creating-an-application-using-AI-w
 http://example.com/instruction-videos/product-building-a-personal-blog/
 http://example.com/uncategorized/recommendation-riot-women-cn/
 http://example.com/uncategorized/recommendation-riot-women-en/
-http://example.com/uncategorized/recommendation-the-thrill-is-gone-cn/
 http://example.com/uncategorized/recommendation-the-accountant-cn/
 http://example.com/uncategorized/recommendation-the-accountant-en/
+http://example.com/uncategorized/recommendation-the-thrill-is-gone-cn/
 http://example.com/uncategorized/recommendation-the-thrill-is-gone-en/
 http://example.com/uncategorized/recommendation-writing-the-blockbuster-novel-cn/
 http://example.com/uncategorized/recommendation-writing-the-blockbuster-novel-en/
@@ -73,12 +73,12 @@ http://example.com/tags/languages/
 http://example.com/tags/daily-sparks/
 http://example.com/tags/monthly-review/
 http://example.com/tags/vibe-coding/
-http://example.com/tags/life-Kits/
 http://example.com/tags/web-development/
+http://example.com/tags/life-Kits/
 http://example.com/tags/note-taking/
 http://example.com/tags/reading-notes/
-http://example.com/tags/paintings/
 http://example.com/tags/calligraphy-art/
+http://example.com/tags/paintings/
 http://example.com/tags/religions/
 http://example.com/categories/learning/
 http://example.com/categories/journaling/

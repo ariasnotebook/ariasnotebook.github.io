@@ -488,15 +488,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-the-thrill-is-gone-cn/</loc>
-    
-    <lastmod>2026-02-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/uncategorized/recommendation-the-accountant-cn/</loc>
     
     <lastmod>2026-02-01</lastmod>
@@ -507,6 +498,15 @@
   
   <url>
     <loc>http://example.com/uncategorized/recommendation-the-accountant-en/</loc>
+    
+    <lastmod>2026-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/recommendation-the-thrill-is-gone-cn/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -669,14 +669,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/life-Kits/</loc>
+    <loc>http://example.com/tags/web-development/</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/web-development/</loc>
+    <loc>http://example.com/tags/life-Kits/</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -697,14 +697,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/paintings/</loc>
+    <loc>http://example.com/tags/calligraphy-art/</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/calligraphy-art/</loc>
+    <loc>http://example.com/tags/paintings/</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
