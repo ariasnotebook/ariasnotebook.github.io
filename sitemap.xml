@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/journaling/the-complexity-of-the-world/</loc>
+    
+    <lastmod>2026-08-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/30-minutes-of-silence/</loc>
+    
+    <lastmod>2026-08-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/journaling/january-at-the-beginning-of-everything/</loc>
     
     <lastmod>2026-08-17</lastmod>
@@ -470,6 +488,15 @@
   </url>
   
   <url>
+    <loc>http://example.com/uncategorized/recommendation-riot-women-cn/</loc>
+    
+    <lastmod>2026-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/uncategorized/recommendation-riot-women-en/</loc>
     
     <lastmod>2026-02-01</lastmod>
@@ -497,7 +524,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-riot-women-cn/</loc>
+    <loc>http://example.com/uncategorized/recommendation-writing-the-blockbuster-novel-en/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -515,15 +542,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-the-thrill-is-gone-en/</loc>
-    
-    <lastmod>2026-02-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/uncategorized/recommendation-writing-the-blockbuster-novel-cn/</loc>
     
     <lastmod>2026-02-01</lastmod>
@@ -533,7 +551,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-writing-the-blockbuster-novel-en/</loc>
+    <loc>http://example.com/uncategorized/recommendation-the-thrill-is-gone-en/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -578,7 +596,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-knives-out-3-en/</loc>
+    <loc>http://example.com/uncategorized/recommendation-knives-out-3-cn/</loc>
     
     <lastmod>2025-12-27</lastmod>
     
@@ -587,7 +605,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-knives-out-3-cn/</loc>
+    <loc>http://example.com/uncategorized/recommendation-knives-out-3-en/</loc>
     
     <lastmod>2025-12-27</lastmod>
     
@@ -641,6 +659,13 @@
 
   
   <url>
+    <loc>http://example.com/tags/daily-sparks/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/languages/</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -648,7 +673,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/daily-sparks/</loc>
+    <loc>http://example.com/tags/life-Kits/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/vibe-coding/</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -663,20 +695,6 @@
   
   <url>
     <loc>http://example.com/tags/web-development/</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/vibe-coding/</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/life-Kits/</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -720,14 +738,14 @@
 
   
   <url>
-    <loc>http://example.com/categories/learning/</loc>
+    <loc>http://example.com/categories/journaling/</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/journaling/</loc>
+    <loc>http://example.com/categories/learning/</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
