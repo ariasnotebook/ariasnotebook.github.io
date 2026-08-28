@@ -1,3 +1,4 @@
+http://example.com/about/index.html
 http://example.com/journaling/the-complexity-of-the-world/
 http://example.com/journaling/30-minutes-of-silence/
 http://example.com/journaling/january-at-the-beginning-of-everything/
@@ -53,8 +54,8 @@ http://example.com/instruction-videos/product-creating-a-personal-journaling-sys
 http://example.com/instruction-videos/product-creating-an-application-using-AI-without-coding/
 http://example.com/instruction-videos/product-building-a-personal-blog/
 http://example.com/uncategorized/recommendation-riot-women-cn/
-http://example.com/uncategorized/recommendation-the-accountant-cn/
 http://example.com/uncategorized/recommendation-riot-women-en/
+http://example.com/uncategorized/recommendation-the-accountant-cn/
 http://example.com/uncategorized/recommendation-the-accountant-en/
 http://example.com/uncategorized/recommendation-the-thrill-is-gone-cn/
 http://example.com/uncategorized/recommendation-writing-the-blockbuster-novel-cn/
@@ -66,10 +67,10 @@ http://example.com/shop/index.html
 http://example.com/tags/index.html
 http://example.com/uncategorized/recommendation-knives-out-3-cn/
 http://example.com/uncategorized/recommendation-knives-out-3-en/
-http://example.com/uncategorized/recommendation-mindhunter-season1-cn/
 http://example.com/uncategorized/recommendation-mindhunter-season1-en/
-http://example.com/uncategorized/recommendation-anatomy-of-a-fall-en/
+http://example.com/uncategorized/recommendation-mindhunter-season1-cn/
 http://example.com/uncategorized/recommendation-anatomy-of-a-fall-cn/
+http://example.com/uncategorized/recommendation-anatomy-of-a-fall-en/
 http://example.com/
 http://example.com/tags/daily-sparks/
 http://example.com/tags/languages/
@@ -77,10 +78,10 @@ http://example.com/tags/monthly-review/
 http://example.com/tags/vibe-coding/
 http://example.com/tags/web-development/
 http://example.com/tags/life-Kits/
-http://example.com/tags/note-taking/
 http://example.com/tags/reading-notes/
-http://example.com/tags/paintings/
 http://example.com/tags/calligraphy-art/
+http://example.com/tags/paintings/
+http://example.com/tags/note-taking/
 http://example.com/tags/religions/
 http://example.com/categories/journaling/
 http://example.com/categories/learning/
