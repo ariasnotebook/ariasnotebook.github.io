@@ -2,63 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
+    <loc>http://example.com/uncategorized/project1/</loc>
     
-    <lastmod>2026-08-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/the-complexity-of-the-world/</loc>
-    
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/journaling/30-minutes-of-silence/</loc>
+    <loc>http://example.com/uncategorized/project3/</loc>
     
-    <lastmod>2026-08-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/january-at-the-beginning-of-everything/</loc>
-    
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/journaling/february-the-moment-before-dawn/</loc>
+    <loc>http://example.com/uncategorized/project2/</loc>
     
-    <lastmod>2026-08-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/itineraries-of-a-hummingbird-reviews/</loc>
-    
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/journaling/january-when-stars-decide-to-fall/</loc>
+    <loc>http://example.com/uncategorized/project2/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/project3/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/project1/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -67,97 +58,7 @@
   <url>
     <loc>http://example.com/journaling/when-words-become-powerless/</loc>
     
-    <lastmod>2026-08-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/the-grumpy-elf/</loc>
-    
-    <lastmod>2026-08-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/a-transparent-storage-box/</loc>
-    
-    <lastmod>2026-08-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/a-fun-trip-to-the-musical-instrument-museum/</loc>
-    
-    <lastmod>2026-08-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/caramel-flavored-winter/</loc>
-    
-    <lastmod>2026-08-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/the-wind-of-the-moment/</loc>
-    
-    <lastmod>2026-08-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/november-tempe-festival-of-the-arts/</loc>
-    
-    <lastmod>2026-08-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/random-thoughts-from-sex-n-the-city-class/</loc>
-    
-    <lastmod>2026-08-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/a-sense-of-confusion/</loc>
-    
-    <lastmod>2026-08-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/learning/9-logical-fallacies-translated-from-textbook/</loc>
-    
-    <lastmod>2026-08-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/journaling/not-allowed/</loc>
-    
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -166,16 +67,25 @@
   <url>
     <loc>http://example.com/journaling/true-or-false/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/journaling/random-thoughts-during-com-class/</loc>
+    <loc>http://example.com/journaling/the-wind-of-the-moment/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/the-grumpy-elf/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -184,7 +94,52 @@
   <url>
     <loc>http://example.com/learning/the-four-noble-truths-of-buddhism/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/the-complexity-of-the-world/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/random-thoughts-from-sex-n-the-city-class/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/random-thoughts-during-com-class/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/november-tempe-festival-of-the-arts/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/not-allowed/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -193,7 +148,7 @@
   <url>
     <loc>http://example.com/journaling/noisli/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -202,7 +157,7 @@
   <url>
     <loc>http://example.com/creating/my-paintings-as-a-total-amateur/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -211,7 +166,34 @@
   <url>
     <loc>http://example.com/creating/my-favorite-works-among-my-calligraphy-pieces/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/january-when-stars-decide-to-fall/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/january-at-the-beginning-of-everything/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/itineraries-of-a-hummingbird-reviews/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -220,7 +202,7 @@
   <url>
     <loc>http://example.com/learning/how-to-use-the-zettelkasten-system/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -229,7 +211,7 @@
   <url>
     <loc>http://example.com/learning/how-to-expand-your-english-vocabulary/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -238,7 +220,7 @@
   <url>
     <loc>http://example.com/learning/how-to-deal-with-the-old-calendar/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -247,7 +229,7 @@
   <url>
     <loc>http://example.com/coding/how-to-build-a-personal-website-in-10-minutes/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -256,61 +238,187 @@
   <url>
     <loc>http://example.com/coding/how-i-started-my-first-vibe-coding-project/</loc>
     
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/project1-cn/</loc>
+    <loc>http://example.com/journaling/february-the-moment-before-dawn/</loc>
     
-    <lastmod>2026-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/project1-en/</loc>
-    
-    <lastmod>2026-02-13</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/project5-en/</loc>
+    <loc>http://example.com/journaling/caramel-flavored-winter/</loc>
     
-    <lastmod>2026-02-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/project3-en/</loc>
-    
-    <lastmod>2026-02-10</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/project5-cn/</loc>
+    <loc>http://example.com/journaling/a-transparent-storage-box/</loc>
     
-    <lastmod>2026-02-10</lastmod>
+    <lastmod>2026-08-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/project3-cn/</loc>
+    <loc>http://example.com/journaling/a-sense-of-confusion/</loc>
     
-    <lastmod>2026-02-10</lastmod>
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/a-fun-trip-to-the-musical-instrument-museum/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/learning/9-logical-fallacies-translated-from-textbook/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/journaling/30-minutes-of-silence/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/design-art/product-burger-store-logo/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/instruction-videos/product-building-a-personal-blog/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/design-art/product-coffee-shop-poster/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/instruction-videos/product-creating-a-personal-journaling-system-using-onenote/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/design-art/product-candy-store-logo/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/web-development/product-hexo-theme-autumn/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/instruction-videos/product-creating-an-application-using-AI-without-coding/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/instruction-videos/product-expanding-your-english-vocabulary/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/web-development/product-hexo-theme-spring/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/web-development/product-hexo-theme-summer/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/web-development/product-hexo-theme-winter/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/design-art/product-perfume-shop-logo/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/about/index.html</loc>
+    
+    <lastmod>2026-08-20</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -326,60 +434,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/project6-en/</loc>
-    
-    <lastmod>2026-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/project6-cn/</loc>
-    
-    <lastmod>2026-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/project4-en/</loc>
-    
-    <lastmod>2026-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/project4-cn/</loc>
-    
-    <lastmod>2026-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/project2-en/</loc>
-    
-    <lastmod>2026-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/project2-cn/</loc>
-    
-    <lastmod>2026-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/memories/index.html</loc>
     
     <lastmod>2026-02-09</lastmod>
@@ -389,115 +443,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/design-art/product-burger-store-logo/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/design-art/product-coffee-shop-poster/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/design-art/product-candy-store-logo/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/design-art/product-perfume-shop-logo/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/web-development/product-hexo-theme-winter/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/web-development/product-hexo-theme-summer/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/web-development/product-hexo-theme-spring/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/web-development/product-hexo-theme-autumn/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/instruction-videos/product-expanding-your-english-vocabulary/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/instruction-videos/product-creating-a-personal-journaling-system-using-onenote/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/instruction-videos/product-creating-an-application-using-AI-without-coding/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/instruction-videos/product-building-a-personal-blog/</loc>
-    
-    <lastmod>2026-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/recommendation-riot-women-cn/</loc>
+    <loc>http://example.com/uncategorized/riot-women/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -506,7 +452,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-the-accountant-cn/</loc>
+    <loc>http://example.com/uncategorized/the-thrill-is-gone/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -515,7 +461,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-riot-women-en/</loc>
+    <loc>http://example.com/uncategorized/writing-the-blockbuster-novel/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -524,7 +470,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-the-accountant-en/</loc>
+    <loc>http://example.com/uncategorized/the-accountant/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -533,7 +479,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-the-thrill-is-gone-cn/</loc>
+    <loc>http://example.com/uncategorized/riot-women/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -542,7 +488,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-writing-the-blockbuster-novel-en/</loc>
+    <loc>http://example.com/uncategorized/the-accountant/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -551,7 +497,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-the-thrill-is-gone-en/</loc>
+    <loc>http://example.com/uncategorized/writing-the-blockbuster-novel/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -560,7 +506,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-writing-the-blockbuster-novel-cn/</loc>
+    <loc>http://example.com/uncategorized/the-thrill-is-gone/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -605,7 +551,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-knives-out-3-cn/</loc>
+    <loc>http://example.com/uncategorized/knives-out-3/</loc>
     
     <lastmod>2025-12-27</lastmod>
     
@@ -614,7 +560,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-knives-out-3-en/</loc>
+    <loc>http://example.com/uncategorized/knives-out-3/</loc>
     
     <lastmod>2025-12-27</lastmod>
     
@@ -623,7 +569,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-mindhunter-season1-cn/</loc>
+    <loc>http://example.com/uncategorized/mindhunter-season1/</loc>
     
     <lastmod>2025-03-02</lastmod>
     
@@ -632,7 +578,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-mindhunter-season1-en/</loc>
+    <loc>http://example.com/uncategorized/mindhunter-season1/</loc>
     
     <lastmod>2025-03-02</lastmod>
     
@@ -641,7 +587,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-anatomy-of-a-fall-cn/</loc>
+    <loc>http://example.com/uncategorized/anatomy-of-a-fall/</loc>
     
     <lastmod>2024-01-28</lastmod>
     
@@ -650,7 +596,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/recommendation-anatomy-of-a-fall-en/</loc>
+    <loc>http://example.com/uncategorized/anatomy-of-a-fall/</loc>
     
     <lastmod>2024-01-28</lastmod>
     
@@ -661,7 +607,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -669,77 +615,77 @@
   
   <url>
     <loc>http://example.com/tags/daily-sparks/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/languages/</loc>
-    <lastmod>2026-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/monthly-review/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/vibe-coding/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/web-development/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <loc>http://example.com/tags/monthly-review/</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/life-Kits/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/web-development/</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/note-taking/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/reading-notes/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/calligraphy-art/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/paintings/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/religions/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -748,49 +694,49 @@
   
   <url>
     <loc>http://example.com/categories/journaling/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/learning/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/coding/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/creating/</loc>
-    <lastmod>2026-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/categories/instruction-videos/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/design-art/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/instruction-videos/</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/web-development/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
