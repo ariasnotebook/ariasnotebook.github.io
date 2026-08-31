@@ -14,14 +14,14 @@
   <meta name="author" content="Aria">
   <meta property="og:title" content="How to Build a Personal Website in 10 Minutes | Aria&#39;s Notebook">
   <meta property="og:description" content="If you&amp;#39;ve always wanted to have a personal website of your own but felt that buying a server, configuring a domain, and learning front-end development would">
-  <meta property="og:image" content="https://ariasnotebook.github.io/img/favicon-notebook-48.png">
+  <meta property="og:image" content="https://ariasnotebook.github.io/post-img/default-thumbnail.webp">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="How to Build a Personal Website in 10 Minutes" data-page-title-zh="如何在10分钟内搭建属于你的个人网站">
+<body class="layout-post" data-page-title-en="How to Build a Personal Website in 10 Minutes" data-page-title-zh="如何在10分钟内搭建属于你的个人网站" data-page-desc-en="If you&amp;#39;ve always wanted to have a personal website of your own but felt that buying a server, configuring a domain, and learning front-end development would" data-page-desc-zh="如果你一直想拥有一个属于自己的个人网站，却觉得购买服务器、配置域名、学习前端开发太麻烦，那么 GitHub Pages + Hexo 是一个非常适合入门的方案。 整个过程不需要购买服务器，也不需要自己写 HTML、CSS 和 JavaScript，只要准备好一个 GitHub 账号和电脑，就可以快速搭建一个可以通过 h">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -737,6 +737,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -746,6 +755,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

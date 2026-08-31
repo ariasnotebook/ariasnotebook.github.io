@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="January - When Stars Decide to Fall" data-page-title-zh="一月：让星星回到坠落前">
+<body class="layout-post" data-page-title-en="January - When Stars Decide to Fall" data-page-title-zh="一月：让星星回到坠落前" data-page-desc-en="我对时间和记忆的感知似乎一直在随机变化。 有时候面对发生在不久前的事，回想的过程却像翻开尘封已久的相册，画面上覆盖着一层浅浅的灰尘。 记忆就像从外太空坠落的星星碎片。从事情发生的那一刻起，我的记忆就开始随着时间的消逝散落在过去，只依稀保留一些画面的颜色和几个瞬间的心情。有时候我会觉得，我的每一次回忆，都是一次全新的想象" data-page-desc-zh="我对时间和记忆的感知似乎一直在随机变化。 有时候面对发生在不久前的事，回想的过程却像翻开尘封已久的相册，画面上覆盖着一层浅浅的灰尘。 记忆就像从外太空坠落的星星碎片。从事情发生的那一刻起，我的记忆就开始随着时间的消逝散落在过去，只依稀保留一些画面的颜色和几个瞬间的心情。有时候我会觉得，我的每一次回忆，都是一次全新的想象">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -301,6 +301,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -310,6 +319,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

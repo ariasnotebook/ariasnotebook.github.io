@@ -14,14 +14,14 @@
   <meta name="author" content="Aria">
   <meta property="og:title" content="Random Thoughts During COM Class | Aria&#39;s Notebook">
   <meta property="og:description" content="今天上com课的时候又开始觉得death是房间里的大象，所有人都在回避它。 想到这里的时候，教授提出了一个问题大概是：Is communication a real thing or a made-up thing? He said people with these two different belief syst">
-  <meta property="og:image" content="https://ariasnotebook.github.io/img/favicon-notebook-48.png">
+  <meta property="og:image" content="https://ariasnotebook.github.io/post-img/default-thumbnail.webp">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="Random Thoughts During COM Class" data-page-title-zh="com课の迷思">
+<body class="layout-post" data-page-title-en="Random Thoughts During COM Class" data-page-title-zh="com课の迷思" data-page-desc-en="今天上com课的时候又开始觉得death是房间里的大象，所有人都在回避它。 想到这里的时候，教授提出了一个问题大概是：Is communication a real thing or a made-up thing? He said people with these two different belief syst" data-page-desc-zh="今天上com课的时候又开始觉得death是房间里的大象，所有人都在回避它。 想到这里的时候，教授提出了一个问题大概是：Is communication a real thing or a made-up thing? He said people with these two different belief syst">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -214,6 +214,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -223,6 +232,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="February - The Moment Before Dawn" data-page-title-zh="二月：黎明前的暗夜">
+<body class="layout-post" data-page-title-en="February - The Moment Before Dawn" data-page-title-zh="二月：黎明前的暗夜" data-page-desc-en="从很久之前起，就发现自己无法坦然地享受快乐了。 面对完完全全属于自己的时间，心里总有一种焦虑感，觉得如果不做些有意义的事，就白白浪费了这些宝贵时间。但其实当下并没有完全确切的“有意义”的事（对意义的追逐发生在我的二十岁时代早期，甚至曾为此引发了生存危机，平安度过后暂且持有的生活论是，不追逐，不去定义何种事物更有意义） " data-page-desc-zh="从很久之前起，就发现自己无法坦然地享受快乐了。 面对完完全全属于自己的时间，心里总有一种焦虑感，觉得如果不做些有意义的事，就白白浪费了这些宝贵时间。但其实当下并没有完全确切的“有意义”的事（对意义的追逐发生在我的二十岁时代早期，甚至曾为此引发了生存危机，平安度过后暂且持有的生活论是，不追逐，不去定义何种事物更有意义） ">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -310,6 +310,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -319,6 +328,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

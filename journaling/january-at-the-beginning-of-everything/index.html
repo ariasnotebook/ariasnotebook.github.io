@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="January - At the Beginning of Everything" data-page-title-zh="一月：在一切尚未发生前">
+<body class="layout-post" data-page-title-en="January - At the Beginning of Everything" data-page-title-zh="一月：在一切尚未发生前" data-page-desc-en="今天是一月的最后一天，好消息——天气居然久违地放晴了。 早上吃了最爱的燕麦杯，然后中午去哼哧哼哧运动了一个小时——一个人的健身房真的很治愈… 这个月初和杉杉的新年旅行，去了一直想去的台州，吃到了好吃到惊为天人的海苔饼——外层酥脆，内里软糯，是我最爱的甜咸口味。另一个惊喜是海苔麦饼，和吃到的第一口的惊喜感一同涌上来的是后" data-page-desc-zh="今天是一月的最后一天，好消息——天气居然久违地放晴了。 早上吃了最爱的燕麦杯，然后中午去哼哧哼哧运动了一个小时——一个人的健身房真的很治愈… 这个月初和杉杉的新年旅行，去了一直想去的台州，吃到了好吃到惊为天人的海苔饼——外层酥脆，内里软糯，是我最爱的甜咸口味。另一个惊喜是海苔麦饼，和吃到的第一口的惊喜感一同涌上来的是后">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -330,6 +330,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -339,6 +348,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

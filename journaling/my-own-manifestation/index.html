@@ -14,14 +14,14 @@
   <meta name="author" content="Aria">
   <meta property="og:title" content="My Own Manifestation | Aria&#39;s Notebook">
   <meta property="og:description" content="今天是Covid后第一次游泳，一开始还担心自己的心肺功能会不会因为流感遭受重创，导致体力不支，但可能是因为这周中提前去健身房做了两次有氧，今天一下水竟然感觉意外的顺畅。 好久没有游得这么开心了……之前在游泳的时候有时候还会担心呛水，今天完全是在享受在水里的时间。 而且快结束的时候发生了一件超级好笑的事。 最近每次用蛙泳">
-  <meta property="og:image" content="https://ariasnotebook.github.io/img/favicon-notebook-48.png">
+  <meta property="og:image" content="https://ariasnotebook.github.io/post-img/default-thumbnail.webp">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="My Own Manifestation" data-page-title-zh="显化的秘密">
+<body class="layout-post" data-page-title-en="My Own Manifestation" data-page-title-zh="显化的秘密" data-page-desc-en="今天是Covid后第一次游泳，一开始还担心自己的心肺功能会不会因为流感遭受重创，导致体力不支，但可能是因为这周中提前去健身房做了两次有氧，今天一下水竟然感觉意外的顺畅。 好久没有游得这么开心了……之前在游泳的时候有时候还会担心呛水，今天完全是在享受在水里的时间。 而且快结束的时候发生了一件超级好笑的事。 最近每次用蛙泳" data-page-desc-zh="今天是Covid后第一次游泳，一开始还担心自己的心肺功能会不会因为流感遭受重创，导致体力不支，但可能是因为这周中提前去健身房做了两次有氧，今天一下水竟然感觉意外的顺畅。 好久没有游得这么开心了……之前在游泳的时候有时候还会担心呛水，今天完全是在享受在水里的时间。 而且快结束的时候发生了一件超级好笑的事。 最近每次用蛙泳">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -224,6 +224,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -233,6 +242,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

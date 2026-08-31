@@ -14,14 +14,14 @@
   <meta name="author" content="Aria">
   <meta property="og:title" content="A Sense of Confusion | Aria&#39;s Notebook">
   <meta property="og:description" content="坐在学校食堂楼下的subway看一篇1937年的文章，讲到战争的引线已经点燃，爆发的时刻肉眼已经可以预见，上海为数不多的和平日子就快到头了，而坐我前面在吃汉堡的几个学生突然大声笑起来。思维就不可避免地陷入一种失落的错乱感。 &amp;nbsp;">
-  <meta property="og:image" content="https://ariasnotebook.github.io/img/favicon-notebook-48.png">
+  <meta property="og:image" content="https://ariasnotebook.github.io/post-img/default-thumbnail.webp">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="A Sense of Confusion" data-page-title-zh="错乱感">
+<body class="layout-post" data-page-title-en="A Sense of Confusion" data-page-title-zh="错乱感" data-page-desc-en="坐在学校食堂楼下的subway看一篇1937年的文章，讲到战争的引线已经点燃，爆发的时刻肉眼已经可以预见，上海为数不多的和平日子就快到头了，而坐我前面在吃汉堡的几个学生突然大声笑起来。思维就不可避免地陷入一种失落的错乱感。 &amp;nbsp;" data-page-desc-zh="坐在学校食堂楼下的subway看一篇1937年的文章，讲到战争的引线已经点燃，爆发的时刻肉眼已经可以预见，上海为数不多的和平日子就快到头了，而坐我前面在吃汉堡的几个学生突然大声笑起来。思维就不可避免地陷入一种失落的错乱感。 &amp;nbsp;">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -212,6 +212,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -221,6 +230,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

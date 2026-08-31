@@ -14,14 +14,14 @@
   <meta name="author" content="Aria">
   <meta property="og:title" content="When Words Become Powerless | Aria&#39;s Notebook">
   <meta property="og:description" content="一起做project的组员突然去世了。两个小时前收到的邮件，现在才反应过来去世代表什么。我和她面对面坐在同一张桌子上一整个学期，还有十天这学期就结束了。实在是太突然了。 &amp;nbsp;">
-  <meta property="og:image" content="https://ariasnotebook.github.io/img/favicon-notebook-48.png">
+  <meta property="og:image" content="https://ariasnotebook.github.io/post-img/default-thumbnail.webp">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="When Words Become Powerless" data-page-title-zh="不知道该讲什么">
+<body class="layout-post" data-page-title-en="When Words Become Powerless" data-page-title-zh="不知道该讲什么" data-page-desc-en="一起做project的组员突然去世了。两个小时前收到的邮件，现在才反应过来去世代表什么。我和她面对面坐在同一张桌子上一整个学期，还有十天这学期就结束了。实在是太突然了。 &amp;nbsp;" data-page-desc-zh="一起做project的组员突然去世了。两个小时前收到的邮件，现在才反应过来去世代表什么。我和她面对面坐在同一张桌子上一整个学期，还有十天这学期就结束了。实在是太突然了。 &amp;nbsp;">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -212,6 +212,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -221,6 +230,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

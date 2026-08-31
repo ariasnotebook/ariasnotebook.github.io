@@ -14,14 +14,14 @@
   <meta name="author" content="Aria">
   <meta property="og:title" content="How I Started My First Vibe Coding Project | Aria&#39;s Notebook">
   <meta property="og:description" content="I didn&amp;#39;t wake up one day thinking, &amp;quot;Today, I shall engineer something groundbreaking.&amp;quot; I woke up thinking, &amp;quot;I want to make something… but lik">
-  <meta property="og:image" content="https://ariasnotebook.github.io/img/favicon-notebook-48.png">
+  <meta property="og:image" content="https://ariasnotebook.github.io/post-img/default-thumbnail.webp">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="How I Started My First Vibe Coding Project" data-page-title-zh="如何开始你的第一个Vibe Coding项目">
+<body class="layout-post" data-page-title-en="How I Started My First Vibe Coding Project" data-page-title-zh="如何开始你的第一个Vibe Coding项目" data-page-desc-en="I didn&amp;#39;t wake up one day thinking, &amp;quot;Today, I shall engineer something groundbreaking.&amp;quot; I woke up thinking, &amp;quot;I want to make something… but lik" data-page-desc-zh="我并非某天醒来就想着： “今天，我要打造一个突破性的产品。” 我醒来时想的是： “我想做点什么……但要……随性一点。” 这就是我的第一个灵感编程项目的由来。 没有路线图。 没有创业计划。 只有灵感、好奇心，以及在浏览器标签页中打开的Replit。 什么是“灵感编程”？灵感编程是： 无压力地编程 没有宏伟计划地构建 让好">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -473,6 +473,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -482,6 +491,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

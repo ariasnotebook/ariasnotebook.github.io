@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="A Fun Trip to the Musical Instrument Museum" data-page-title-zh="乐器博物馆一日游">
+<body class="layout-post" data-page-title-en="A Fun Trip to the Musical Instrument Museum" data-page-title-zh="乐器博物馆一日游" data-page-desc-en="乐器博物馆好好玩！ P1&amp;amp;P2: 一进去就看到这个，看到空盒子愣了下，再一看解释我哈哈哈哈哈竟不知道这是玩笑似的正经注释，还是在正经地开玩笑 P3: 叫Bandura，是乌克兰的national instrument，解说器就放了一小段，但我反复听了好久！好好听啊 P4: 非洲的文化多样程度真的超出想象… P5" data-page-desc-zh="乐器博物馆好好玩！ P1&amp;amp;P2: 一进去就看到这个，看到空盒子愣了下，再一看解释我哈哈哈哈哈竟不知道这是玩笑似的正经注释，还是在正经地开玩笑 P3: 叫Bandura，是乌克兰的national instrument，解说器就放了一小段，但我反复听了好久！好好听啊 P4: 非洲的文化多样程度真的超出想象… P5">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -372,6 +372,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -381,6 +390,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

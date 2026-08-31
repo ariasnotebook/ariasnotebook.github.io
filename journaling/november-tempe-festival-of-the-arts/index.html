@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="November - Tempe Festival of the Arts" data-page-title-zh="十一月：沉默的游云">
+<body class="layout-post" data-page-title-en="November - Tempe Festival of the Arts" data-page-title-zh="十一月：沉默的游云" data-page-desc-en="十一月的最后一天也是这学期的最后一天。 早上结束了最后一节COM课之后，因为怕下午的FIN考试不顺利，赶忙打印了FIN的formula sheet，然后去图书馆接着做笔记。但其实真正考试的时候还是感到意料之中的顺利。或许我总是焦虑过头。 考完试去吃了海鲜，还碰巧遇上了今年是第五十周年的Tempe Festival of" data-page-desc-zh="十一月的最后一天也是这学期的最后一天。 早上结束了最后一节COM课之后，因为怕下午的FIN考试不顺利，赶忙打印了FIN的formula sheet，然后去图书馆接着做笔记。但其实真正考试的时候还是感到意料之中的顺利。或许我总是焦虑过头。 考完试去吃了海鲜，还碰巧遇上了今年是第五十周年的Tempe Festival of">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -260,6 +260,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -269,6 +278,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

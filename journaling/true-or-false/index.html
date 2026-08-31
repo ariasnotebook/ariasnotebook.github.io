@@ -14,14 +14,14 @@
   <meta name="author" content="Aria">
   <meta property="og:title" content="True or False | Aria&#39;s Notebook">
   <meta property="og:description" content="其实我没有那么在乎生命和自由，对陌生的地方不怎么好奇，每晚入睡的时候也没有对明天的期许。对自己的未来不怎么上心，不在意分数荣誉排名，也不在意和无关的人相处时候的气氛。现在没有死的唯一原因是怀着对爱的期待，我只想要爱，得到爱，付出爱，我活着只想做这一件事——和人交换真心。 &amp;nbsp;">
-  <meta property="og:image" content="https://ariasnotebook.github.io/img/favicon-notebook-48.png">
+  <meta property="og:image" content="https://ariasnotebook.github.io/post-img/default-thumbnail.webp">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="True or False" data-page-title-zh="True or False">
+<body class="layout-post" data-page-title-en="True or False" data-page-title-zh="True or False" data-page-desc-en="其实我没有那么在乎生命和自由，对陌生的地方不怎么好奇，每晚入睡的时候也没有对明天的期许。对自己的未来不怎么上心，不在意分数荣誉排名，也不在意和无关的人相处时候的气氛。现在没有死的唯一原因是怀着对爱的期待，我只想要爱，得到爱，付出爱，我活着只想做这一件事——和人交换真心。 &amp;nbsp;" data-page-desc-zh="其实我没有那么在乎生命和自由，对陌生的地方不怎么好奇，每晚入睡的时候也没有对明天的期许。对自己的未来不怎么上心，不在意分数荣誉排名，也不在意和无关的人相处时候的气氛。现在没有死的唯一原因是怀着对爱的期待，我只想要爱，得到爱，付出爱，我活着只想做这一件事——和人交换真心。 &amp;nbsp;">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -212,6 +212,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -221,6 +230,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

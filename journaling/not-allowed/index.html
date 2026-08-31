@@ -14,14 +14,14 @@
   <meta name="author" content="Aria">
   <meta property="og:title" content="そこ恥ずかしいセリフ禁止 | Aria&#39;s Notebook">
   <meta property="og:description" content="睡前看ARIA温柔的愿望那一话的时候，看到弹幕说这个番很少遇到一起看的小伙伴，然后突然刷出一条“虽然是自己一个人，但是大家在弹幕上是跨越时空在一起的呢”。 然后！后面跟了一条“そこ恥ずかしいセリフ禁止!” 真的好感动555">
-  <meta property="og:image" content="https://ariasnotebook.github.io/img/favicon-notebook-48.png">
+  <meta property="og:image" content="https://ariasnotebook.github.io/post-img/default-thumbnail.webp">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="そこ恥ずかしいセリフ禁止" data-page-title-zh="そこ恥ずかしいセリフ禁止">
+<body class="layout-post" data-page-title-en="そこ恥ずかしいセリフ禁止" data-page-title-zh="そこ恥ずかしいセリフ禁止" data-page-desc-en="睡前看ARIA温柔的愿望那一话的时候，看到弹幕说这个番很少遇到一起看的小伙伴，然后突然刷出一条“虽然是自己一个人，但是大家在弹幕上是跨越时空在一起的呢”。 然后！后面跟了一条“そこ恥ずかしいセリフ禁止!” 真的好感动555" data-page-desc-zh="睡前看ARIA温柔的愿望那一话的时候，看到弹幕说这个番很少遇到一起看的小伙伴，然后突然刷出一条“虽然是自己一个人，但是大家在弹幕上是跨越时空在一起的呢”。 然后！后面跟了一条“そこ恥ずかしいセリフ禁止!” 真的好感动555">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -220,6 +220,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -229,6 +238,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

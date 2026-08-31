@@ -14,14 +14,14 @@
   <meta name="author" content="Aria">
   <meta property="og:title" content="30 Minutes of Silence | Aria&#39;s Notebook">
   <meta property="og:description" content="早上出门前检查了一下手机，电量只有7%，想着到了公司要第一时间用手机打卡，所以上班途中不敢放肆地在车里用手机蓝牙听歌。 因此事情变得奇怪了起来。 路还是原来的路，时间也是原来的时间，但手放在方向盘上的时候，车里没有任何声音。一切感觉都好像消失了，像一面亘古平静的镜湖，即便掷下一颗石子，也不会有任何波痕。 度过了很奇怪的">
-  <meta property="og:image" content="https://ariasnotebook.github.io/img/favicon-notebook-48.png">
+  <meta property="og:image" content="https://ariasnotebook.github.io/post-img/default-thumbnail.webp">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="30 Minutes of Silence" data-page-title-zh="没有声音的30分钟">
+<body class="layout-post" data-page-title-en="30 Minutes of Silence" data-page-title-zh="没有声音的30分钟" data-page-desc-en="早上出门前检查了一下手机，电量只有7%，想着到了公司要第一时间用手机打卡，所以上班途中不敢放肆地在车里用手机蓝牙听歌。 因此事情变得奇怪了起来。 路还是原来的路，时间也是原来的时间，但手放在方向盘上的时候，车里没有任何声音。一切感觉都好像消失了，像一面亘古平静的镜湖，即便掷下一颗石子，也不会有任何波痕。 度过了很奇怪的" data-page-desc-zh="早上出门前检查了一下手机，电量只有7%，想着到了公司要第一时间用手机打卡，所以上班途中不敢放肆地在车里用手机蓝牙听歌。 因此事情变得奇怪了起来。 路还是原来的路，时间也是原来的时间，但手放在方向盘上的时候，车里没有任何声音。一切感觉都好像消失了，像一面亘古平静的镜湖，即便掷下一颗石子，也不会有任何波痕。 度过了很奇怪的">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -226,6 +226,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -235,6 +244,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

@@ -14,14 +14,14 @@
   <meta name="author" content="Aria">
   <meta property="og:title" content="9 Logical Fallacies Translated from Textbook | Aria&#39;s Notebook">
   <meta property="og:description" content="在英语书里截选了一小段干货，包含几种常见的形式逻辑谬误和非形式逻辑谬误，但数量不全，例子也比较浅显。翻译完这篇，除了不再让我轻易对陌生人生气之外，还让我认识到我的中文水平有多低...不过之后看到很荒谬可笑的观点，能轻易地拎起来，用手掂量掂量就能扔进对应的谬误箩筐里，还是很开心的。 1）人身攻击（Ad hominem ）">
-  <meta property="og:image" content="https://ariasnotebook.github.io/img/favicon-notebook-48.png">
+  <meta property="og:image" content="https://ariasnotebook.github.io/post-img/default-thumbnail.webp">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="9 Logical Fallacies Translated from Textbook" data-page-title-zh="常见的逻辑谬论">
+<body class="layout-post" data-page-title-en="9 Logical Fallacies Translated from Textbook" data-page-title-zh="常见的逻辑谬论" data-page-desc-en="在英语书里截选了一小段干货，包含几种常见的形式逻辑谬误和非形式逻辑谬误，但数量不全，例子也比较浅显。翻译完这篇，除了不再让我轻易对陌生人生气之外，还让我认识到我的中文水平有多低...不过之后看到很荒谬可笑的观点，能轻易地拎起来，用手掂量掂量就能扔进对应的谬误箩筐里，还是很开心的。 1）人身攻击（Ad hominem ）" data-page-desc-zh="在英语书里截选了一小段干货，包含几种常见的形式逻辑谬误和非形式逻辑谬误，但数量不全，例子也比较浅显。翻译完这篇，除了不再让我轻易对陌生人生气之外，还让我认识到我的中文水平有多低...不过之后看到很荒谬可笑的观点，能轻易地拎起来，用手掂量掂量就能扔进对应的谬误箩筐里，还是很开心的。 1）人身攻击（Ad hominem ）">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -250,6 +250,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -259,6 +268,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');

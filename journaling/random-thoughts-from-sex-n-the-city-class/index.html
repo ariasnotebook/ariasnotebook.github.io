@@ -14,14 +14,14 @@
   <meta name="author" content="Aria">
   <meta property="og:title" content="Random Thoughts from Sex &amp; the City Class | Aria&#39;s Notebook">
   <meta property="og:description" content="虽然老师的确很努力地在教学生critical thinking，比如在playboy那章，我就从一开始“这是男权社会的糟粕！”到后来觉得把它说成“女性的性解放”也未尝不可。从章头学到章尾，经常从非黑即白的状态到两面论 多面论。但我总感觉老师自己的lecture一直有种嘲讽的语气...&amp;quot;Alex- the fe">
-  <meta property="og:image" content="https://ariasnotebook.github.io/img/favicon-notebook-48.png">
+  <meta property="og:image" content="https://ariasnotebook.github.io/post-img/default-thumbnail.webp">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body class="layout-post" data-page-title-en="Random Thoughts from Sex &amp; the City Class" data-page-title-zh="和sex &amp; the city这节课有关的一点废话">
+<body class="layout-post" data-page-title-en="Random Thoughts from Sex &amp; the City Class" data-page-title-zh="和sex &amp; the city这节课有关的一点废话" data-page-desc-en="虽然老师的确很努力地在教学生critical thinking，比如在playboy那章，我就从一开始“这是男权社会的糟粕！”到后来觉得把它说成“女性的性解放”也未尝不可。从章头学到章尾，经常从非黑即白的状态到两面论 多面论。但我总感觉老师自己的lecture一直有种嘲讽的语气...&amp;quot;Alex- the fe" data-page-desc-zh="虽然老师的确很努力地在教学生critical thinking，比如在playboy那章，我就从一开始“这是男权社会的糟粕！”到后来觉得把它说成“女性的性解放”也未尝不可。从章头学到章尾，经常从非黑即白的状态到两面论 多面论。但我总感觉老师自己的lecture一直有种嘲讽的语气...&amp;quot;Alex- the fe">
   <header class="site-header">
     <div class="header-bar">
       <div class="logo">
@@ -216,6 +216,15 @@
           document.title = nextTitle;
           var metaTitle = document.querySelector('meta[name="title"]');
           if (metaTitle) metaTitle.setAttribute('content', nextTitle);
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+        }
+        function setMetaDescription(nextDesc) {
+          if (nextDesc == null || nextDesc === '') return;
+          var metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+          var ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
         if (strings.title && strings.subtitle && isHome) {
           setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
@@ -225,6 +234,13 @@
           if (te != null && tz != null) {
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
+          }
+        }
+        if (body) {
+          var de = body.getAttribute('data-page-desc-en');
+          var dz = body.getAttribute('data-page-desc-zh');
+          if (de != null || dz != null) {
+            setMetaDescription(lang === 'zh-CN' ? (dz || de || '') : (de || dz || ''));
           }
         }
         var nodes = document.querySelectorAll('[data-i18n], .lang-content[data-lang]');
