@@ -8,14 +8,49 @@
 	<link rel="shortcut icon" type="image/png" href="/img/favicon-notebook-48.png">
   
   <title>February - The Moment Before Dawn | Aria&#39;s Notebook</title>
-  <meta name="title" content="February - The Moment Before Dawn | Aria&#39;s Notebook">
-  <meta name="description" content="从很久之前起，就发现自己无法坦然地享受快乐了。 面对完完全全属于自己的时间，心里总有一种焦虑感，觉得如果不做些有意义的事，就白白浪费了这些宝贵时间。但其实当下并没有完全确切的“有意义”的事（对意义的追逐发生在我的二十岁时代早期，甚至曾为此引发了生存危机，平安度过后暂且持有的生活论是，不追逐，不去定义何种事物更有意义） ">
+  <meta name="title" content="February - The Moment Before Dawn | Aria&#39;s Notebook" data-en="February - The Moment Before Dawn | Aria's Notebook" data-zh="二月：黎明前的暗夜 | 生活笔记">
+  <meta name="description" content="从很久之前起，就发现自己无法坦然地享受快乐了。 面对完完全全属于自己的时间，心里总有一种焦虑感，觉得如果不做些有意义的事，就白白浪费了这些宝贵时间。但其实当下并没有完全确切的“有意义”的事（对意义的追逐发生在我的二十岁时代早期，甚至曾为此引发了生存危机，平安度过后暂且持有的生活论是，不追逐，不去定义何种事物更有意义） " data-en="从很久之前起，就发现自己无法坦然地享受快乐了。 面对完完全全属于自己的时间，心里总有一种焦虑感，觉得如果不做些有意义的事，就白白浪费了这些宝贵时间。但其实当下并没有完全确切的“有意义”的事（对意义的追逐发生在我的二十岁时代早期，甚至曾为此引发了生存危机，平安度过后暂且持有的生活论是，不追逐，不去定义何种事物更有意义） " data-zh="从很久之前起，就发现自己无法坦然地享受快乐了。 面对完完全全属于自己的时间，心里总有一种焦虑感，觉得如果不做些有意义的事，就白白浪费了这些宝贵时间。但其实当下并没有完全确切的“有意义”的事（对意义的追逐发生在我的二十岁时代早期，甚至曾为此引发了生存危机，平安度过后暂且持有的生活论是，不追逐，不去定义何种事物更有意义） ">
   
-  <meta name="author" content="Aria">
-  <meta property="og:title" content="February - The Moment Before Dawn | Aria&#39;s Notebook">
-  <meta property="og:description" content="从很久之前起，就发现自己无法坦然地享受快乐了。 面对完完全全属于自己的时间，心里总有一种焦虑感，觉得如果不做些有意义的事，就白白浪费了这些宝贵时间。但其实当下并没有完全确切的“有意义”的事（对意义的追逐发生在我的二十岁时代早期，甚至曾为此引发了生存危机，平安度过后暂且持有的生活论是，不追逐，不去定义何种事物更有意义） ">
+  <meta name="author" content="Aria" data-en="Aria" data-zh="Aria">
+  <meta property="og:title" content="February - The Moment Before Dawn | Aria&#39;s Notebook" data-en="February - The Moment Before Dawn | Aria's Notebook" data-zh="二月：黎明前的暗夜 | 生活笔记">
+  <meta property="og:description" content="从很久之前起，就发现自己无法坦然地享受快乐了。 面对完完全全属于自己的时间，心里总有一种焦虑感，觉得如果不做些有意义的事，就白白浪费了这些宝贵时间。但其实当下并没有完全确切的“有意义”的事（对意义的追逐发生在我的二十岁时代早期，甚至曾为此引发了生存危机，平安度过后暂且持有的生活论是，不追逐，不去定义何种事物更有意义） " data-en="从很久之前起，就发现自己无法坦然地享受快乐了。 面对完完全全属于自己的时间，心里总有一种焦虑感，觉得如果不做些有意义的事，就白白浪费了这些宝贵时间。但其实当下并没有完全确切的“有意义”的事（对意义的追逐发生在我的二十岁时代早期，甚至曾为此引发了生存危机，平安度过后暂且持有的生活论是，不追逐，不去定义何种事物更有意义） " data-zh="从很久之前起，就发现自己无法坦然地享受快乐了。 面对完完全全属于自己的时间，心里总有一种焦虑感，觉得如果不做些有意义的事，就白白浪费了这些宝贵时间。但其实当下并没有完全确切的“有意义”的事（对意义的追逐发生在我的二十岁时代早期，甚至曾为此引发了生存危机，平安度过后暂且持有的生活论是，不追逐，不去定义何种事物更有意义） ">
   <meta property="og:image" content="https://ariasnotebook.github.io/post-img/february-the-moment-before-dawn/road.webp">
   
+  <script>
+    (function () {
+      var LANG_KEY = 'site-lang';
+      function getLang() {
+        try {
+          var q = new URLSearchParams(window.location.search).get('lang');
+          if (q === 'zh-CN' || q === 'en') return q;
+          return localStorage.getItem(LANG_KEY) || 'en';
+        } catch (e) { return 'en'; }
+      }
+      function applyMetaLang(lang) {
+        var nodes = document.querySelectorAll('meta[data-en], meta[data-zh], title');
+        // title tag has no data-en; sync from meta[name=title]
+        var metaTitle = document.querySelector('meta[name="title"]');
+        var pick = function (el) {
+          if (!el) return;
+          var v = lang === 'zh-CN' ? (el.getAttribute('data-zh') || el.getAttribute('data-en')) : (el.getAttribute('data-en') || el.getAttribute('data-zh'));
+          if (v != null && v !== '') el.setAttribute('content', v);
+        };
+        pick(document.querySelector('meta[name="title"]'));
+        pick(document.querySelector('meta[name="description"]'));
+        pick(document.querySelector('meta[name="author"]'));
+        pick(document.querySelector('meta[property="og:title"]'));
+        pick(document.querySelector('meta[property="og:description"]'));
+        if (metaTitle) {
+          var nextTitle = lang === 'zh-CN'
+            ? (metaTitle.getAttribute('data-zh') || metaTitle.getAttribute('data-en'))
+            : (metaTitle.getAttribute('data-en') || metaTitle.getAttribute('data-zh'));
+          if (nextTitle) document.title = nextTitle;
+        }
+      }
+      applyMetaLang(getLang());
+      window.__applyMetaLang = applyMetaLang;
+    })();
+  </script>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
@@ -303,7 +338,7 @@
         var body = document.body;
         var label = document.getElementById('lang-switch-label');
         if (label) label.textContent = lang === 'zh-CN' ? 'EN' : 'CN';
-        var isHome = !window.location.pathname || window.location.pathname === '/' || /\/index\.html$/i.test(window.location.pathname);
+        var isHome = body && body.classList.contains('layout-index');
         var siteTitle = (strings.title) || "Aria's Notebook";
         var siteSubtitle = (strings.subtitle) || "The Life Journal of an Earthling";
         function setDocumentTitle(nextTitle) {
@@ -320,8 +355,10 @@
           var ogDesc = document.querySelector('meta[property="og:description"]');
           if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
-        if (strings.title && strings.subtitle && isHome) {
-          setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
+        if (typeof window.__applyMetaLang === 'function') {
+          window.__applyMetaLang(lang);
+        } else if (isHome) {
+          setDocumentTitle(siteTitle + (siteSubtitle ? (' | ' + siteSubtitle) : ''));
         } else if (body) {
           var te = body.getAttribute('data-page-title-en');
           var tz = body.getAttribute('data-page-title-zh');
@@ -329,8 +366,6 @@
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
           }
-        }
-        if (body) {
           var de = body.getAttribute('data-page-desc-en');
           var dz = body.getAttribute('data-page-desc-zh');
           if (de != null || dz != null) {

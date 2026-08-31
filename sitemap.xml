@@ -335,25 +335,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/instruction-videos/product-creating-a-personal-journaling-system-using-onenote/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/instruction-videos/product-building-a-personal-blog/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/instruction-videos/product-creating-an-application-using-AI-without-coding/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -371,6 +353,15 @@
   </url>
   
   <url>
+    <loc>http://example.com/instruction-videos/product-creating-a-personal-journaling-system-using-onenote/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/design-art/product-coffee-shop-poster/</loc>
     
     <lastmod>2026-08-30</lastmod>
@@ -380,7 +371,25 @@
   </url>
   
   <url>
+    <loc>http://example.com/instruction-videos/product-creating-an-application-using-AI-without-coding/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/instruction-videos/product-expanding-your-english-vocabulary/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/web-development/product-hexo-theme-spring/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -408,15 +417,6 @@
   
   <url>
     <loc>http://example.com/design-art/product-perfume-shop-logo/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/web-development/product-hexo-theme-spring/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -667,13 +667,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/life-Kits/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/note-taking/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -681,7 +674,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/reading-notes/</loc>
+    <loc>http://example.com/tags/life-Kits/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -689,6 +682,13 @@
   
   <url>
     <loc>http://example.com/tags/calligraphy-art/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/reading-notes/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

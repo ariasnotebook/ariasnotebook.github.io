@@ -8,9 +8,44 @@
 	<link rel="shortcut icon" type="image/png" href="/img/favicon-notebook-48.png">
   
   <title>Web development | Aria&#39;s Notebook</title>
-  <meta name="title" content="Web development | Aria&#39;s Notebook">
-  <meta name="description" content="test">
+  <meta name="title" content="Web development | Aria&#39;s Notebook" data-en="Web development | Aria's Notebook" data-zh="Web development | 生活笔记">
+  <meta name="description" content="test" data-en="test" data-zh="test">
   
+  <script>
+    (function () {
+      var LANG_KEY = 'site-lang';
+      function getLang() {
+        try {
+          var q = new URLSearchParams(window.location.search).get('lang');
+          if (q === 'zh-CN' || q === 'en') return q;
+          return localStorage.getItem(LANG_KEY) || 'en';
+        } catch (e) { return 'en'; }
+      }
+      function applyMetaLang(lang) {
+        var nodes = document.querySelectorAll('meta[data-en], meta[data-zh], title');
+        // title tag has no data-en; sync from meta[name=title]
+        var metaTitle = document.querySelector('meta[name="title"]');
+        var pick = function (el) {
+          if (!el) return;
+          var v = lang === 'zh-CN' ? (el.getAttribute('data-zh') || el.getAttribute('data-en')) : (el.getAttribute('data-en') || el.getAttribute('data-zh'));
+          if (v != null && v !== '') el.setAttribute('content', v);
+        };
+        pick(document.querySelector('meta[name="title"]'));
+        pick(document.querySelector('meta[name="description"]'));
+        pick(document.querySelector('meta[name="author"]'));
+        pick(document.querySelector('meta[property="og:title"]'));
+        pick(document.querySelector('meta[property="og:description"]'));
+        if (metaTitle) {
+          var nextTitle = lang === 'zh-CN'
+            ? (metaTitle.getAttribute('data-zh') || metaTitle.getAttribute('data-en'))
+            : (metaTitle.getAttribute('data-en') || metaTitle.getAttribute('data-zh'));
+          if (nextTitle) document.title = nextTitle;
+        }
+      }
+      applyMetaLang(getLang());
+      window.__applyMetaLang = applyMetaLang;
+    })();
+  </script>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
@@ -80,6 +115,34 @@
   
     
       <div class="box-item">
+        <a href="/web-development/product-hexo-theme-spring/">
+          <div class="product-image-container">
+            <img src="/product-img/example.jpg"
+                 alt="hexo 春日主题">
+          </div>
+          <h3>
+            
+              <span class="lang-content" data-lang="en" style="">hexo theme - Spring</span>
+              <span class="lang-content" data-lang="zh-CN" style="display:none;">hexo 春日主题</span>
+            
+          </h3>
+          <p class="product-price">
+            $19.99
+          </p>
+        </a>
+        <button
+          class="snipcart-add-item btn"
+          data-item-id="cmtgyziq3005afkdc72ez877z"
+          data-item-price="19.99"
+          data-item-url="/web-development/product-hexo-theme-spring/"
+          data-item-name="hexo theme - Spring"
+          data-item-description="hexo theme - Spring"
+          data-item-image="/product-img/example.jpg">
+          <i class="fa-solid fa-basket-shopping"></i> <span data-i18n="shop_page.cart_button_text" class="i18n-text">Add to Cart</span>
+        </button>
+      </div>
+    
+      <div class="box-item">
         <a href="/web-development/product-hexo-theme-autumn/">
           <div class="product-image-container">
             <img src="/product-img/example.jpg"
@@ -97,7 +160,7 @@
         </a>
         <button
           class="snipcart-add-item btn"
-          data-item-id="cmtgxnw9i005am8dc00fvhcrb"
+          data-item-id="cmtgyziq3005cfkdcflrj544b"
           data-item-price="19.99"
           data-item-url="/web-development/product-hexo-theme-autumn/"
           data-item-name="hexo theme - Autumn"
@@ -125,39 +188,11 @@
         </a>
         <button
           class="snipcart-add-item btn"
-          data-item-id="cmtgxnw9i005dm8dc6hb3eobh"
+          data-item-id="cmtgyziq4005ffkdc4fy1akvf"
           data-item-price="19.99"
           data-item-url="/web-development/product-hexo-theme-summer/"
           data-item-name="hexo theme - Summer"
           data-item-description="hexo theme - Summer"
-          data-item-image="/product-img/example.jpg">
-          <i class="fa-solid fa-basket-shopping"></i> <span data-i18n="shop_page.cart_button_text" class="i18n-text">Add to Cart</span>
-        </button>
-      </div>
-    
-      <div class="box-item">
-        <a href="/web-development/product-hexo-theme-spring/">
-          <div class="product-image-container">
-            <img src="/product-img/example.jpg"
-                 alt="hexo 春日主题">
-          </div>
-          <h3>
-            
-              <span class="lang-content" data-lang="en" style="">hexo theme - Spring</span>
-              <span class="lang-content" data-lang="zh-CN" style="display:none;">hexo 春日主题</span>
-            
-          </h3>
-          <p class="product-price">
-            $19.99
-          </p>
-        </a>
-        <button
-          class="snipcart-add-item btn"
-          data-item-id="cmtgxnw9j005im8dc3pg5hgde"
-          data-item-price="19.99"
-          data-item-url="/web-development/product-hexo-theme-spring/"
-          data-item-name="hexo theme - Spring"
-          data-item-description="hexo theme - Spring"
           data-item-image="/product-img/example.jpg">
           <i class="fa-solid fa-basket-shopping"></i> <span data-i18n="shop_page.cart_button_text" class="i18n-text">Add to Cart</span>
         </button>
@@ -181,7 +216,7 @@
         </a>
         <button
           class="snipcart-add-item btn"
-          data-item-id="cmtgxnw9k005nm8dc3ni51zh1"
+          data-item-id="cmtgyziq4005jfkdccxk54rbq"
           data-item-price="19.99"
           data-item-url="/web-development/product-hexo-theme-winter/"
           data-item-name="hexo theme - Winter"
@@ -229,7 +264,7 @@
         var body = document.body;
         var label = document.getElementById('lang-switch-label');
         if (label) label.textContent = lang === 'zh-CN' ? 'EN' : 'CN';
-        var isHome = !window.location.pathname || window.location.pathname === '/' || /\/index\.html$/i.test(window.location.pathname);
+        var isHome = body && body.classList.contains('layout-index');
         var siteTitle = (strings.title) || "Aria's Notebook";
         var siteSubtitle = (strings.subtitle) || "The Life Journal of an Earthling";
         function setDocumentTitle(nextTitle) {
@@ -246,8 +281,10 @@
           var ogDesc = document.querySelector('meta[property="og:description"]');
           if (ogDesc) ogDesc.setAttribute('content', nextDesc);
         }
-        if (strings.title && strings.subtitle && isHome) {
-          setDocumentTitle(siteTitle + ' | ' + siteSubtitle);
+        if (typeof window.__applyMetaLang === 'function') {
+          window.__applyMetaLang(lang);
+        } else if (isHome) {
+          setDocumentTitle(siteTitle + (siteSubtitle ? (' | ' + siteSubtitle) : ''));
         } else if (body) {
           var te = body.getAttribute('data-page-title-en');
           var tz = body.getAttribute('data-page-title-zh');
@@ -255,8 +292,6 @@
             var pageTitle = lang === 'zh-CN' ? tz : te;
             setDocumentTitle(pageTitle ? (pageTitle + ' | ' + siteTitle) : (siteTitle + ' | ' + siteSubtitle));
           }
-        }
-        if (body) {
           var de = body.getAttribute('data-page-desc-en');
           var dz = body.getAttribute('data-page-desc-zh');
           if (de != null || dz != null) {
