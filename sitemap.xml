@@ -335,15 +335,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/design-art/product-coffee-shop-poster/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/design-art/product-burger-store-logo/</loc>
     
     <lastmod>2026-08-30</lastmod>
@@ -371,7 +362,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/instruction-videos/product-creating-an-application-using-AI-without-coding/</loc>
+    <loc>http://example.com/design-art/product-coffee-shop-poster/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -380,7 +371,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/web-development/product-hexo-theme-autumn/</loc>
+    <loc>http://example.com/instruction-videos/product-creating-an-application-using-AI-without-coding/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -398,7 +389,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/web-development/product-hexo-theme-summer/</loc>
+    <loc>http://example.com/web-development/product-hexo-theme-autumn/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -416,7 +407,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/web-development/product-hexo-theme-winter/</loc>
+    <loc>http://example.com/web-development/product-hexo-theme-summer/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -426,6 +417,15 @@
   
   <url>
     <loc>http://example.com/design-art/product-perfume-shop-logo/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/web-development/product-hexo-theme-winter/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -479,15 +479,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/the-thrill-is-gone/</loc>
-    
-    <lastmod>2026-02-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/uncategorized/writing-the-blockbuster-novel/</loc>
     
     <lastmod>2026-02-01</lastmod>
@@ -497,7 +488,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/the-accountant/</loc>
+    <loc>http://example.com/uncategorized/the-thrill-is-gone/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -515,7 +506,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/writing-the-blockbuster-novel/</loc>
+    <loc>http://example.com/uncategorized/the-thrill-is-gone/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -524,7 +515,16 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/the-thrill-is-gone/</loc>
+    <loc>http://example.com/uncategorized/the-accountant/</loc>
+    
+    <lastmod>2026-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/writing-the-blockbuster-novel/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -660,7 +660,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/life-Kits/</loc>
+    <loc>http://example.com/tags/web-development/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -674,7 +674,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/web-development/</loc>
+    <loc>http://example.com/tags/life-Kits/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
