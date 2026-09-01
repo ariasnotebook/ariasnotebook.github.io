@@ -140,7 +140,7 @@
             <!-- Descriptions filled by JS -->
           </div>
         </div>
-        <a href="#" target="_blank" rel="noopener" class="project-card-link projects-open-btn" id="projectsOpenBtn">
+        <a href="" target="_blank" rel="noopener" class="project-card-link projects-open-btn" id="projectsOpenBtn">
           <i class="fa-solid fa-external-link-alt"></i>
           <span data-i18n="buttons.click_to_open" class="i18n-text">Click to Open</span>
         </a>
@@ -270,10 +270,9 @@
     if (!openBtn) return;
     var strings = getStrings();
     var openProject = (strings['buttons.click_to_open'] != null ? strings['buttons.click_to_open'] : 'Click to Open');
-    openBtn.href = (project && project.projectUrl) ? project.projectUrl : '#';
+    openBtn.href = (project && project.projectUrl) ? project.projectUrl : '';
     var label = openBtn.querySelector('.i18n-text');
     if (label) label.textContent = openProject;
-    openBtn.style.visibility = (project && project.projectUrl) ? 'visible' : 'hidden';
   }
 
   function renderProjectButtons() {

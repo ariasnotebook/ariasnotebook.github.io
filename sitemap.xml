@@ -2,7 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/journaling/august-the-summer-of-sudden-rain/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/project2/</loc>
+    
+    <lastmod>2026-09-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/uncategorized/project3/</loc>
+    
+    <lastmod>2026-09-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/uncategorized/project1/</loc>
+    
+    <lastmod>2026-09-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/uncategorized/project3/</loc>
+    
+    <lastmod>2026-09-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/uncategorized/project2/</loc>
+    
+    <lastmod>2026-09-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/uncategorized/project1/</loc>
+    
+    <lastmod>2026-09-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/journaling/august-the-summer-of-sudden-rain/</loc>
     
     <lastmod>2026-08-31</lastmod>
     
@@ -11,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/my-own-manifestation/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/my-own-manifestation/</loc>
     
     <lastmod>2026-08-31</lastmod>
     
@@ -20,7 +74,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/project1/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/when-words-become-powerless/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -29,7 +83,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/project3/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/true-or-false/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -38,7 +92,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/project2/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/the-wind-of-the-moment/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -47,7 +101,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/project2/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/the-grumpy-elf/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -56,7 +110,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/project3/</loc>
+    <loc>https://ariasnotebook.github.io/learning/the-four-noble-truths-of-buddhism/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -65,7 +119,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/project1/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/the-complexity-of-the-world/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -74,7 +128,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/when-words-become-powerless/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/random-thoughts-from-sex-n-the-city-class/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -83,7 +137,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/true-or-false/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/random-thoughts-during-com-class/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -92,7 +146,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/the-wind-of-the-moment/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/november-tempe-festival-of-the-arts/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -101,7 +155,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/the-grumpy-elf/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/not-allowed/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -110,7 +164,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/learning/the-four-noble-truths-of-buddhism/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/noisli/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -119,7 +173,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/the-complexity-of-the-world/</loc>
+    <loc>https://ariasnotebook.github.io/creating/my-paintings-as-a-total-amateur/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -128,7 +182,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/random-thoughts-from-sex-n-the-city-class/</loc>
+    <loc>https://ariasnotebook.github.io/creating/my-favorite-works-among-my-calligraphy-pieces/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -137,7 +191,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/random-thoughts-during-com-class/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/january-when-stars-decide-to-fall/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -146,7 +200,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/november-tempe-festival-of-the-arts/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/january-at-the-beginning-of-everything/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -155,7 +209,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/not-allowed/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/itineraries-of-a-hummingbird-reviews/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -164,7 +218,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/noisli/</loc>
+    <loc>https://ariasnotebook.github.io/learning/how-to-use-the-zettelkasten-system/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -173,7 +227,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/creating/my-paintings-as-a-total-amateur/</loc>
+    <loc>https://ariasnotebook.github.io/learning/how-to-expand-your-english-vocabulary/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -182,7 +236,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/creating/my-favorite-works-among-my-calligraphy-pieces/</loc>
+    <loc>https://ariasnotebook.github.io/learning/how-to-deal-with-the-old-calendar/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -191,7 +245,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/january-when-stars-decide-to-fall/</loc>
+    <loc>https://ariasnotebook.github.io/coding/how-to-build-a-personal-website-in-10-minutes/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -200,7 +254,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/january-at-the-beginning-of-everything/</loc>
+    <loc>https://ariasnotebook.github.io/coding/how-i-started-my-first-vibe-coding-project/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -209,7 +263,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/itineraries-of-a-hummingbird-reviews/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/february-the-moment-before-dawn/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -218,7 +272,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/learning/how-to-use-the-zettelkasten-system/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/caramel-flavored-winter/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -227,7 +281,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/learning/how-to-expand-your-english-vocabulary/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/a-transparent-storage-box/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -236,7 +290,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/learning/how-to-deal-with-the-old-calendar/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/a-sense-of-confusion/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -245,7 +299,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/coding/how-to-build-a-personal-website-in-10-minutes/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/a-fun-trip-to-the-musical-instrument-museum/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -254,7 +308,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/coding/how-i-started-my-first-vibe-coding-project/</loc>
+    <loc>https://ariasnotebook.github.io/learning/9-logical-fallacies-translated-from-textbook/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -263,7 +317,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/february-the-moment-before-dawn/</loc>
+    <loc>https://ariasnotebook.github.io/journaling/30-minutes-of-silence/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -272,7 +326,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/caramel-flavored-winter/</loc>
+    <loc>https://ariasnotebook.github.io/design-art/product-burger-store-logo/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -281,7 +335,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/a-transparent-storage-box/</loc>
+    <loc>https://ariasnotebook.github.io/instruction-videos/product-building-a-personal-blog/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -290,7 +344,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/a-sense-of-confusion/</loc>
+    <loc>https://ariasnotebook.github.io/design-art/product-candy-store-logo/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -299,7 +353,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/a-fun-trip-to-the-musical-instrument-museum/</loc>
+    <loc>https://ariasnotebook.github.io/instruction-videos/product-creating-an-application-using-AI-without-coding/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -308,7 +362,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/learning/9-logical-fallacies-translated-from-textbook/</loc>
+    <loc>https://ariasnotebook.github.io/instruction-videos/product-creating-a-personal-journaling-system-using-onenote/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -317,7 +371,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/journaling/30-minutes-of-silence/</loc>
+    <loc>https://ariasnotebook.github.io/design-art/product-coffee-shop-poster/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -326,7 +380,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/design-art/product-candy-store-logo/</loc>
+    <loc>https://ariasnotebook.github.io/web-development/product-hexo-theme-autumn/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -335,7 +389,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/instruction-videos/product-building-a-personal-blog/</loc>
+    <loc>https://ariasnotebook.github.io/web-development/product-hexo-theme-spring/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -344,7 +398,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/instruction-videos/product-creating-a-personal-journaling-system-using-onenote/</loc>
+    <loc>https://ariasnotebook.github.io/instruction-videos/product-expanding-your-english-vocabulary/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -353,7 +407,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/instruction-videos/product-expanding-your-english-vocabulary/</loc>
+    <loc>https://ariasnotebook.github.io/web-development/product-hexo-theme-summer/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -362,7 +416,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/instruction-videos/product-creating-an-application-using-AI-without-coding/</loc>
+    <loc>https://ariasnotebook.github.io/web-development/product-hexo-theme-winter/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -371,7 +425,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/web-development/product-hexo-theme-autumn/</loc>
+    <loc>https://ariasnotebook.github.io/design-art/product-perfume-shop-logo/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -380,61 +434,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/web-development/product-hexo-theme-spring/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/design-art/product-burger-store-logo/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/web-development/product-hexo-theme-summer/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/web-development/product-hexo-theme-winter/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/design-art/product-coffee-shop-poster/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/design-art/product-perfume-shop-logo/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/about/index.html</loc>
+    <loc>https://ariasnotebook.github.io/about/index.html</loc>
     
     <lastmod>2026-08-20</lastmod>
     
@@ -443,7 +443,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/projects/index.html</loc>
+    <loc>https://ariasnotebook.github.io/projects/index.html</loc>
     
     <lastmod>2026-02-10</lastmod>
     
@@ -452,7 +452,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/memories/index.html</loc>
+    <loc>https://ariasnotebook.github.io/memories/index.html</loc>
     
     <lastmod>2026-02-09</lastmod>
     
@@ -461,7 +461,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/the-thrill-is-gone/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/the-thrill-is-gone/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -470,7 +470,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/riot-women/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/the-accountant/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -479,7 +479,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/the-accountant/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/writing-the-blockbuster-novel/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -488,7 +488,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/writing-the-blockbuster-novel/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/riot-women/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -497,7 +497,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/riot-women/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/riot-women/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -506,7 +506,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/the-accountant/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/the-accountant/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -515,7 +515,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/writing-the-blockbuster-novel/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/the-thrill-is-gone/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -524,7 +524,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/the-thrill-is-gone/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/writing-the-blockbuster-novel/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -533,7 +533,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/products/index.html</loc>
+    <loc>https://ariasnotebook.github.io/products/index.html</loc>
     
     <lastmod>2026-01-24</lastmod>
     
@@ -542,7 +542,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://ariasnotebook.github.io/categories/index.html</loc>
     
     <lastmod>2026-01-24</lastmod>
     
@@ -551,7 +551,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/shop/index.html</loc>
+    <loc>https://ariasnotebook.github.io/shop/index.html</loc>
     
     <lastmod>2026-01-24</lastmod>
     
@@ -560,7 +560,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>https://ariasnotebook.github.io/tags/index.html</loc>
     
     <lastmod>2026-01-23</lastmod>
     
@@ -569,7 +569,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/knives-out-3/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/knives-out-3/</loc>
     
     <lastmod>2025-12-27</lastmod>
     
@@ -578,7 +578,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/knives-out-3/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/knives-out-3/</loc>
     
     <lastmod>2025-12-27</lastmod>
     
@@ -587,7 +587,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/mindhunter-season1/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/mindhunter-season1/</loc>
     
     <lastmod>2025-03-02</lastmod>
     
@@ -596,7 +596,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/mindhunter-season1/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/mindhunter-season1/</loc>
     
     <lastmod>2025-03-02</lastmod>
     
@@ -605,7 +605,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/anatomy-of-a-fall/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/anatomy-of-a-fall/</loc>
     
     <lastmod>2024-01-28</lastmod>
     
@@ -614,7 +614,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/anatomy-of-a-fall/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/anatomy-of-a-fall/</loc>
     
     <lastmod>2024-01-28</lastmod>
     
@@ -624,7 +624,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://ariasnotebook.github.io/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -632,77 +632,77 @@
 
   
   <url>
-    <loc>http://example.com/tags/daily-sparks/</loc>
+    <loc>https://ariasnotebook.github.io/tags/daily-sparks/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/languages/</loc>
+    <loc>https://ariasnotebook.github.io/tags/monthly-review/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/monthly-review/</loc>
+    <loc>https://ariasnotebook.github.io/tags/languages/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/vibe-coding/</loc>
+    <loc>https://ariasnotebook.github.io/tags/web-development/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/web-development/</loc>
+    <loc>https://ariasnotebook.github.io/tags/vibe-coding/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/note-taking/</loc>
+    <loc>https://ariasnotebook.github.io/tags/life-Kits/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/reading-notes/</loc>
+    <loc>https://ariasnotebook.github.io/tags/note-taking/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/life-Kits/</loc>
+    <loc>https://ariasnotebook.github.io/tags/reading-notes/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/calligraphy-art/</loc>
+    <loc>https://ariasnotebook.github.io/tags/calligraphy-art/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/paintings/</loc>
+    <loc>https://ariasnotebook.github.io/tags/paintings/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/religions/</loc>
+    <loc>https://ariasnotebook.github.io/tags/religions/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -711,49 +711,49 @@
 
   
   <url>
-    <loc>http://example.com/categories/journaling/</loc>
+    <loc>https://ariasnotebook.github.io/categories/journaling/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/learning/</loc>
+    <loc>https://ariasnotebook.github.io/categories/learning/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/coding/</loc>
+    <loc>https://ariasnotebook.github.io/categories/coding/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/creating/</loc>
+    <loc>https://ariasnotebook.github.io/categories/creating/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/design-art/</loc>
+    <loc>https://ariasnotebook.github.io/categories/design-art/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/instruction-videos/</loc>
+    <loc>https://ariasnotebook.github.io/categories/instruction-videos/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/web-development/</loc>
+    <loc>https://ariasnotebook.github.io/categories/web-development/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
