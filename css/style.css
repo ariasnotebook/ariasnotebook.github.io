@@ -1378,7 +1378,6 @@ body.nav-locked{
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   animation: slideInFromRight 0.6s ease-out backwards;
@@ -1400,11 +1399,6 @@ body.nav-locked{
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-.memory-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); */
 }
 
 .memory-card-image {
@@ -1564,10 +1558,6 @@ body.nav-locked{
   .memory-scroll-arrow--disabled {
     opacity: 0.28;
   }
-
-  .memory-card:hover {
-    transform: none;
-  }
 }
 
 /* -------------- Memories / Projects full page (hero + banner) -------------- */
@@ -1640,6 +1630,7 @@ body.nav-locked{
   gap: 40px;
 }
 
+/* 我的瞬间 卡片 */
 .memories-gallery-card {
   position: relative;
   overflow: hidden;

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ariasnotebook.github.io/uncategorized/project2/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/project3/</loc>
     
     <lastmod>2026-09-01</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://ariasnotebook.github.io/uncategorized/project3/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/project2/</loc>
     
     <lastmod>2026-09-01</lastmod>
     
@@ -326,25 +326,16 @@
   </url>
   
   <url>
-    <loc>https://ariasnotebook.github.io/instruction-videos/product-building-a-personal-blog/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ariasnotebook.github.io/design-art/product-burger-store-logo/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ariasnotebook.github.io/design-art/product-candy-store-logo/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/instruction-videos/product-building-a-personal-blog/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -362,7 +353,34 @@
   </url>
   
   <url>
+    <loc>https://ariasnotebook.github.io/design-art/product-burger-store-logo/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ariasnotebook.github.io/design-art/product-coffee-shop-poster/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/web-development/product-hexo-theme-autumn/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/instruction-videos/product-expanding-your-english-vocabulary/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -389,16 +407,7 @@
   </url>
   
   <url>
-    <loc>https://ariasnotebook.github.io/instruction-videos/product-expanding-your-english-vocabulary/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ariasnotebook.github.io/web-development/product-hexo-theme-autumn/</loc>
+    <loc>https://ariasnotebook.github.io/web-development/product-hexo-theme-winter/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -408,15 +417,6 @@
   
   <url>
     <loc>https://ariasnotebook.github.io/web-development/product-hexo-theme-summer/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ariasnotebook.github.io/web-development/product-hexo-theme-winter/</loc>
     
     <lastmod>2026-08-30</lastmod>
     
@@ -461,7 +461,25 @@
   </url>
   
   <url>
+    <loc>https://ariasnotebook.github.io/uncategorized/writing-the-blockbuster-novel/</loc>
+    
+    <lastmod>2026-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ariasnotebook.github.io/uncategorized/riot-women/</loc>
+    
+    <lastmod>2026-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/uncategorized/the-thrill-is-gone/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -497,15 +515,6 @@
   </url>
   
   <url>
-    <loc>https://ariasnotebook.github.io/uncategorized/riot-women/</loc>
-    
-    <lastmod>2026-02-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ariasnotebook.github.io/uncategorized/the-accountant/</loc>
     
     <lastmod>2026-02-01</lastmod>
@@ -515,16 +524,7 @@
   </url>
   
   <url>
-    <loc>https://ariasnotebook.github.io/uncategorized/the-thrill-is-gone/</loc>
-    
-    <lastmod>2026-02-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ariasnotebook.github.io/uncategorized/writing-the-blockbuster-novel/</loc>
+    <loc>https://ariasnotebook.github.io/uncategorized/riot-women/</loc>
     
     <lastmod>2026-02-01</lastmod>
     
@@ -625,85 +625,85 @@
 
   <url>
     <loc>https://ariasnotebook.github.io/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://ariasnotebook.github.io/tags/languages/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <loc>https://ariasnotebook.github.io/tags/daily-sparks/</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ariasnotebook.github.io/tags/daily-sparks/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <loc>https://ariasnotebook.github.io/tags/languages/</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ariasnotebook.github.io/tags/monthly-review/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ariasnotebook.github.io/tags/vibe-coding/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ariasnotebook.github.io/tags/life-Kits/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ariasnotebook.github.io/tags/web-development/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/tags/life-Kits/</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ariasnotebook.github.io/tags/note-taking/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ariasnotebook.github.io/tags/reading-notes/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ariasnotebook.github.io/tags/calligraphy-art/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ariasnotebook.github.io/tags/paintings/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/tags/calligraphy-art/</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ariasnotebook.github.io/tags/religions/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -711,50 +711,50 @@
 
   
   <url>
-    <loc>https://ariasnotebook.github.io/categories/learning/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <loc>https://ariasnotebook.github.io/categories/journaling/</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ariasnotebook.github.io/categories/journaling/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <loc>https://ariasnotebook.github.io/categories/learning/</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ariasnotebook.github.io/categories/coding/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ariasnotebook.github.io/categories/creating/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ariasnotebook.github.io/categories/instruction-videos/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ariasnotebook.github.io/categories/design-art/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ariasnotebook.github.io/categories/instruction-videos/</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ariasnotebook.github.io/categories/web-development/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
