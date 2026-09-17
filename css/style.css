@@ -1560,9 +1560,10 @@ body.nav-locked{
   }
 }
 
-/* -------------- Memories / Projects full page (hero + banner) -------------- */
+/* -------------- Memories / Projects / Recommendations full page (hero + banner) -------------- */
 .memories-page-hero,
-.projects-page-hero {
+.projects-page-hero,
+.recommendations-page-hero {
   width: 100%;
   height: 70px;
   overflow: hidden;
@@ -1576,7 +1577,8 @@ body.nav-locked{
 }
 
 .memories-page-hero img,
-.projects-page-hero img {
+.projects-page-hero img,
+.recommendations-page-hero img {
   visibility: hidden;
   display: block;
 }
@@ -1781,7 +1783,8 @@ body.nav-locked{
   }
 
   .memories-page-hero,
-  .projects-page-hero {
+  .projects-page-hero,
+  .recommendations-page-hero {
     height: 36px;
     margin-bottom: 12px;
   }
@@ -2055,7 +2058,7 @@ body.nav-locked{
 .recommendation-header {
   background: var(--hover);
   display: grid;
-  grid-template-columns: 100px 1fr 120px 130px;
+  grid-template-columns: 100px 1fr 120px 120px 130px;
   padding: 0.8rem 2rem;
   font-weight: bold;
   color: var(--block);
@@ -2067,7 +2070,7 @@ body.nav-locked{
 
 .recommendation-row {
   display: grid;
-  grid-template-columns: 100px 1fr 120px 130px;
+  grid-template-columns: 100px 1fr 120px 120px 130px;
   padding: 0.6rem 2rem;
   border-bottom: 1px solid var(--base);
   align-items: center;
@@ -2088,9 +2091,16 @@ body.nav-locked{
 .recommendation-badge--movie { background: #e69797; color: #fff; }
 .recommendation-badge--tv-series { background: #a2bbaa; color: #fff; }
 .recommendation-badge--music { background: #c197c4; color: #fff; }
+.recommendation-badge--musical { background: #d4a574; color: #fff; }
 
 .recommendation-title { text-align: left; padding: 0 0 0 5rem; font-weight: 600; }
-.recommendation-date { font-size: 0.8rem; opacity: 0.5; }
+.recommendation-date {
+  font-size: 0.88rem;
+  opacity: 0.7;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: none;
+}
 
 .recommendation-rate {
   display: inline-flex;
@@ -2290,7 +2300,7 @@ body.recommendation-modal-open {
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
       "badge title title"
-      "rate rate notes";
+      "rate date notes";
     gap: 0.5rem 0.75rem;
     padding: 0.85rem 1rem;
     border-bottom: 1px solid var(--base);
@@ -2322,6 +2332,12 @@ body.recommendation-modal-open {
     font-size: 0.75rem;
   }
 
+  .recommendation-date {
+    grid-area: date;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
   .recommendation-notes-cell {
     grid-area: notes;
     margin-left: 0;
@@ -2342,6 +2358,904 @@ body.recommendation-modal-open {
 @media (max-width: 480px) {
   .recommendation-modal-body {
     padding: 20px 1.25rem;
+  }
+}
+
+/* -------------- Recommendations page -------------- */
+.recommendations-page-title {
+  text-align: center;
+  margin: 0 auto 36px;
+  padding: 0 16px;
+  font-size: 1.8rem;
+  color: var(--icon);
+}
+
+.recommendations-page-title i {
+  color: var(--hover-darker);
+  margin-right: 10px;
+}
+
+.recommendations-page-wrap {
+  padding: 0 8% 72px;
+}
+
+.rec-recent {
+  max-width: 1100px;
+  margin: 88px auto 0;
+}
+
+.rec-recent-title {
+  text-align: center;
+  margin: 0 auto 36px;
+  padding: 0 16px;
+  font-size: 1.8rem;
+  color: var(--icon);
+}
+
+.rec-recent-title i {
+  color: var(--hover-darker);
+  margin-right: 10px;
+}
+
+.rec-recent-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.rec-recent-card {
+  background: var(--block);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.rec-recent-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px 10px 18px;
+  background: var(--hover);
+  min-width: 0;
+}
+
+.rec-recent-card-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+}
+
+.rec-recent-card-title .i18n-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rec-recent-card-title i {
+  opacity: 0.95;
+}
+
+.rec-recent-search {
+  position: relative;
+  flex-shrink: 0;
+  width: min(52%, 220px);
+  display: flex;
+  align-items: center;
+}
+
+.rec-recent-search > i {
+  position: absolute;
+  left: 10px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.78rem;
+  pointer-events: none;
+}
+
+.rec-recent-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  border-radius: 999px;
+  padding: 6px 10px 6px 28px;
+  font-size: 0.82rem;
+  font-family: Inter, "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  outline: none;
+  transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.rec-recent-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.rec-recent-search-input:focus {
+  background: rgba(255, 255, 255, 0.24);
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.12);
+}
+
+.rec-recent-search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  cursor: pointer;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='black' d='M4.1 4.1a.75.75 0 0 1 1.06 0L8 6.94l2.84-2.84a.75.75 0 1 1 1.06 1.06L9.06 8l2.84 2.84a.75.75 0 1 1-1.06 1.06L8 9.06l-2.84 2.84a.75.75 0 1 1-1.06-1.06L6.94 8 4.1 5.16a.75.75 0 0 1 0-1.06z'/%3E%3C/svg%3E") center / contain no-repeat;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='black' d='M4.1 4.1a.75.75 0 0 1 1.06 0L8 6.94l2.84-2.84a.75.75 0 1 1 1.06 1.06L9.06 8l2.84 2.84a.75.75 0 1 1-1.06 1.06L8 9.06l-2.84 2.84a.75.75 0 1 1-1.06-1.06L6.94 8 4.1 5.16a.75.75 0 0 1 0-1.06z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.rec-recent-card-body {
+  padding: 8px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0;
+  min-height: 0;
+}
+
+.rec-recent-items {
+  display: flex;
+  flex-direction: column;
+  /* Reserve 4 collapsed rows so the pager stays put across pages */
+  min-height: calc(4 * 6.75rem);
+}
+
+.rec-recent-item {
+  padding: 12px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--base) 70%, transparent);
+  flex-shrink: 0;
+}
+
+.rec-recent-items .rec-recent-item:last-child {
+  border-bottom: 1px solid color-mix(in srgb, var(--base) 70%, transparent);
+}
+
+.rec-recent-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 10px 0 4px;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.rec-recent-page-btn {
+  border: none;
+  background: color-mix(in srgb, var(--base) 55%, transparent);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  font-size: 0.9rem;
+  min-width: 34px;
+  transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.rec-recent-page-btn--text {
+  min-width: auto;
+  padding: 6px 12px;
+  font-weight: 500;
+  font-family: Inter, "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html[lang="en"] .rec-recent-page-btn--text {
+  font-weight: 400;
+}
+
+.rec-recent-page-btn:hover:not(:disabled) {
+  background: var(--hover);
+  color: var(--block);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rec-recent-page-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+}
+
+.rec-recent-page-info {
+  font-size: 0.9rem;
+  color: var(--text);
+  opacity: 0.8;
+  min-width: 3.5em;
+  text-align: center;
+  font-family: Inter, "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.rec-recent-item-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+  min-width: 0;
+}
+
+.rec-recent-item-title {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 0.98rem;
+  min-width: 0;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Inter, "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.rec-recent-item-title .rec-board-release {
+  font-weight: 700;
+  color: var(--text-lighter);
+}
+
+.rec-recent-item-top .rec-board-artist,
+.rec-recent-item-top .rec-board-author {
+  flex-shrink: 0;
+  margin-left: auto;
+  max-width: 42%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rec-recent-item-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.rec-recent-item-date {
+  font-size: 0.82rem;
+  color: var(--text-lighter);
+  white-space: nowrap;
+  text-transform: none;
+}
+
+.rec-recent-item-notes,
+.rec-recent-item-notes-empty {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-lighter);
+  /* Keep collapsed notes at a stable 2-line footprint */
+  min-height: calc(1.5em * 2);
+}
+
+.rec-recent-item-notes.is-expanded {
+  min-height: 0;
+}
+
+.rec-recent-item-notes .rec-notes-clamp-body {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.rec-recent-empty {
+  margin: 12px 0;
+  text-align: center;
+  color: var(--text-lighter);
+  font-size: 0.9rem;
+}
+
+.rec-board {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  background: var(--block);
+}
+
+.rec-board-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 18px;
+  background: var(--hover);
+}
+
+.rec-board-tab {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.rec-board-tab:hover {
+  background: color-mix(in srgb, #fff 16%, transparent);
+}
+
+.rec-board-tab.is-active {
+  background: var(--icon);
+  color: #fff;
+}
+
+.rec-board-body {
+  padding: 28px 28px 32px;
+  min-height: 420px;
+}
+
+.rec-board-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(300px, 1.15fr);
+  grid-template-rows: auto 1fr;
+  gap: 16px 48px;
+  align-items: start;
+}
+
+.rec-board-featured-label {
+  grid-column: 1;
+  grid-row: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 12px 0 16px;
+  color: var(--icon);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.rec-board-featured-label i {
+  color: var(--icon);
+}
+
+.rec-board-featured-main {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  margin: 0 12px 0 16px;
+}
+
+.rec-board-list-wrap {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  margin-right: 16px;
+  min-width: 0;
+}
+
+.rec-board-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.rec-board-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 4px;
+}
+
+.rec-board-page-btn {
+  border: none;
+  background: var(--block);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 999px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  font-size: 0.95rem;
+  min-width: 36px;
+  transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.rec-board-page-btn:hover:not(:disabled) {
+  background: var(--hover);
+  color: var(--block);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.12);
+}
+
+.rec-board-page-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+}
+
+.rec-board-page-info {
+  font-size: 0.95rem;
+  color: var(--text);
+  opacity: 0.8;
+  min-width: 3.5em;
+  text-align: center;
+}
+
+.rec-board-cover {
+  width: 100%;
+  max-width: none;
+  height: 240px;
+  aspect-ratio: auto;
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--base) 55%, #fff);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.rec-board-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.rec-board-cover-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--hover);
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.rec-board-featured-info {
+  text-align: left;
+}
+
+.rec-board-featured-entry {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.rec-board-featured-entry-main {
+  min-width: 0;
+}
+
+.rec-board-featured-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text);
+  font-family: Inter, "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  display: block;
+  flex: 1;
+  min-width: min(100%, 12rem);
+  text-align: left;
+}
+
+.rec-board-featured-title-text {
+  min-width: 0;
+  text-align: left;
+  line-height: 1.35;
+}
+
+.rec-board-featured-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.rec-board-release {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.rec-board-artist,
+.rec-board-author {
+  flex-shrink: 0;
+  margin-left: auto;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-lighter);
+  text-align: right;
+  font-family: Inter, "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.rec-board-featured-heading .rec-board-artist,
+.rec-board-featured-heading .rec-board-author {
+  margin-left: auto;
+  text-align: right;
+  line-height: 1.35;
+  padding-top: 0.4em;
+}
+
+.rec-board-featured-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.rec-board-featured-notes {
+  text-align: left;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.rec-board-featured-notes .rec-notes-clamp-body {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.rec-notes-clamp {
+  margin: 0;
+  color: var(--text-lighter);
+  word-break: break-word;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.rec-notes-clamp-body {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.rec-notes-clamp-ellipsis,
+.rec-notes-clamp-more,
+.rec-notes-clamp-less {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+.rec-notes-clamp-ellipsis {
+  display: inline;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.rec-notes-clamp-more {
+  display: inline;
+  color: var(--icon);
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.rec-notes-clamp-more:hover,
+.rec-notes-clamp-less:hover {
+  opacity: 0.85;
+}
+
+.rec-notes-clamp-less {
+  display: block;
+  margin-top: 6px;
+  color: var(--icon);
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+}
+
+.rec-notes-clamp.is-short .rec-notes-clamp-ellipsis,
+.rec-notes-clamp.is-short .rec-notes-clamp-more,
+.rec-notes-clamp.is-short .rec-notes-clamp-less,
+.rec-notes-clamp-ellipsis[hidden],
+.rec-notes-clamp-more[hidden],
+.rec-notes-clamp-less[hidden] {
+  display: none !important;
+}
+
+.rec-board-type-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--icon);
+  white-space: nowrap;
+}
+
+.rec-board-type-pill--tv { background: #a2bbaa; }
+.rec-board-type-pill--movie { background: #e69797; }
+.rec-board-type-pill--music { background: #c197c4; }
+.rec-board-type-pill--musical { background: #d4a574; }
+.rec-board-type-pill--book { background: #94adc7; }
+
+.rec-board-row {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 14px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--base) 70%, transparent);
+}
+
+.rec-board-list > .rec-board-row:first-child {
+  padding-top: 0;
+}
+
+.rec-board-row:last-child {
+  border-bottom: none;
+}
+
+.rec-board-rank {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--icon);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  flex-shrink: 0;
+}
+
+.rec-board-row-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.rec-board-row-title {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 1rem;
+  flex: 1;
+  min-width: 0;
+  font-family: Inter, "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.rec-board-row-top .rec-board-artist,
+.rec-board-row-top .rec-board-author {
+  flex-shrink: 0;
+  margin-left: auto;
+  max-width: 45%;
+}
+
+.rec-board-row-top .rec-board-stars {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.rec-board-row-notes {
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.rec-board-row-notes .rec-notes-clamp-body,
+.rec-board-row-notes .rec-notes-clamp-less {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.rec-board-featured-notes .rec-notes-clamp-less {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.rec-board-stars {
+  justify-content: flex-start;
+}
+
+.rec-board-stars .fa-star {
+  font-size: 0.85rem;
+}
+
+.rec-board-empty,
+.rec-board-list-empty {
+  text-align: center;
+  color: var(--text-lighter);
+  padding: 48px 16px;
+}
+
+.rec-board-empty i {
+  font-size: 2rem;
+  color: var(--icon);
+  margin-bottom: 12px;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .recommendations-page-wrap {
+    padding: 0 4% 56px;
+  }
+
+  .rec-board-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 8px;
+  }
+
+  .rec-board-featured-label {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .rec-board-featured-main {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .rec-board-cover {
+    height: 160px;
+  }
+
+  .rec-board-list-wrap {
+    grid-column: 1;
+    grid-row: 3;
+    margin-right: 0;
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 1px solid color-mix(in srgb, var(--base) 70%, transparent);
+  }
+
+  .rec-board-featured-title {
+    font-size: 1rem;
+    line-height: inherit;
+    min-width: 0;
+  }
+
+  .rec-board-featured-heading {
+    align-items: center;
+    margin-bottom: 4px;
+    gap: 12px;
+  }
+
+  .rec-board-featured-heading .rec-board-artist,
+  .rec-board-featured-heading .rec-board-author {
+    padding-top: 0;
+    font-size: 0.9rem;
+  }
+
+  .rec-board-featured-notes {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .rec-board-grid[data-tab="music"] .rec-board-row-top,
+  .rec-board-grid[data-tab="book"] .rec-board-row-top,
+  .rec-board-grid[data-tab="music"] .rec-board-featured-heading,
+  .rec-board-grid[data-tab="book"] .rec-board-featured-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .rec-board-grid[data-tab="music"] .rec-board-row-top .rec-board-artist,
+  .rec-board-grid[data-tab="book"] .rec-board-row-top .rec-board-author,
+  .rec-board-grid[data-tab="music"] .rec-board-featured-heading .rec-board-artist,
+  .rec-board-grid[data-tab="book"] .rec-board-featured-heading .rec-board-author {
+    margin-left: 0;
+    max-width: 100%;
+    align-self: flex-end;
+    text-align: right;
+    padding-top: 0;
+  }
+
+  .rec-board-list {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .rec-board-grid.is-page-rest .rec-board-featured-label,
+  .rec-board-grid.is-page-rest .rec-board-featured-main {
+    display: none;
+  }
+
+  .rec-board-grid.is-page-rest .rec-board-list-wrap {
+    grid-row: 1;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .rec-board-body:has(.rec-board-grid.is-page-rest) {
+    min-height: 0;
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .recommendations-page-title,
+  .rec-recent-title {
+    font-size: 1.45rem;
+    margin-bottom: 28px;
+  }
+
+  .recommendations-page-wrap {
+    padding: 0 10% 56px;
+  }
+
+  .rec-recent {
+    margin-top: 64px;
+  }
+
+  .rec-recent-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .rec-recent-search {
+    width: min(56%, 200px);
+  }
+
+  .rec-recent-search-input {
+    font-size: 0.8rem;
+  }
+
+  .rec-board-tabs {
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .rec-board-tab {
+    padding: 7px 12px;
+    font-size: 0.85rem;
+  }
+
+  .rec-board-body {
+    padding: 20px 16px 24px;
+  }
+
+  .rec-board-featured-title {
+    font-size: 1rem;
+  }
+
+  .rec-board-row,
+  .rec-board-featured-entry {
+    grid-template-columns: 26px 1fr;
+  }
+
+  .rec-board-row .rec-board-type-pill {
+    display: none;
   }
 }
 
