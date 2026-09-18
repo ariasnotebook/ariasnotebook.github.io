@@ -1892,7 +1892,7 @@ body.nav-locked{
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: 20px 10px 20px 10px;
+  margin: 32px 10px 32px 10px;
   justify-content: center;
 }
 
@@ -2282,6 +2282,10 @@ body.recommendation-modal-open {
   word-break: break-word;
 }
 
+.recommendation-modal-notes.is-empty {
+  color: var(--text-lighter);
+}
+
 /* Recommendation section: mobile */
 @media (max-width: 768px) {
   .recommendation-header {
@@ -2590,6 +2594,18 @@ html[lang="en"] .rec-recent-page-btn--text {
   min-width: 0;
 }
 
+.rec-recent-item-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex: 1;
+}
+
+.rec-recent-item-heading .recommendation-badge {
+  flex-shrink: 0;
+}
+
 .rec-recent-item-title {
   font-weight: 700;
   color: var(--text);
@@ -2615,6 +2631,59 @@ html[lang="en"] .rec-recent-page-btn--text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Default: single-line truncated meta. Click a truncated item to reveal full text. */
+.rec-recent-item {
+  cursor: default;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.rec-recent-item.is-meta-expandable {
+  cursor: pointer;
+}
+
+.rec-recent-item.is-meta-expanded .rec-recent-item-top {
+  align-items: flex-start;
+}
+
+.rec-recent-item.is-meta-expanded .rec-recent-item-heading {
+  align-items: flex-start;
+}
+
+.rec-recent-item.is-meta-expanded .rec-recent-item-heading .recommendation-badge {
+  margin-top: 0.2em;
+}
+
+.rec-recent-item.is-meta-expanded .rec-recent-item-title {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.rec-recent-item.is-meta-expanded .rec-board-artist,
+.rec-recent-item.is-meta-expanded .rec-board-author {
+  max-width: none;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.rec-recent-item.is-meta-expanded.is-meta-stacked .rec-recent-item-top {
+  flex-wrap: wrap;
+  row-gap: 2px;
+}
+
+.rec-recent-item.is-meta-expanded.is-meta-stacked .rec-recent-item-heading {
+  flex: 1 1 100%;
+}
+
+.rec-recent-item.is-meta-expanded.is-meta-stacked .rec-board-artist,
+.rec-recent-item.is-meta-expanded.is-meta-stacked .rec-board-author {
+  flex: 1 1 100%;
+  max-width: 100%;
+  margin-left: 0;
+  text-align: right;
+  white-space: normal;
 }
 
 .rec-recent-item-meta {
@@ -2873,10 +2942,10 @@ html[lang="en"] .rec-recent-page-btn--text {
 .rec-board-release {
   font-size: inherit;
   font-family: inherit;
-  font-weight: inherit;
+  font-weight: 700;
   line-height: inherit;
   letter-spacing: inherit;
-  color: inherit;
+  color: var(--text-lighter);
   white-space: nowrap;
 }
 
@@ -3204,7 +3273,27 @@ html[lang="en"] .rec-recent-page-btn--text {
 }
 
 @media (max-width: 640px) {
-  .recommendations-page-title,
+  .recommendations-page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+    font-size: 1.45rem;
+    margin-bottom: 28px;
+    white-space: nowrap;
+    padding: 0 12px;
+  }
+
+  .recommendations-page-title i {
+    margin-right: 0;
+    flex-shrink: 0;
+  }
+
+  .recommendations-page-title .i18n-text {
+    white-space: nowrap;
+  }
+
   .rec-recent-title {
     font-size: 1.45rem;
     margin-bottom: 28px;
@@ -3232,13 +3321,18 @@ html[lang="en"] .rec-recent-page-btn--text {
   }
 
   .rec-board-tabs {
-    gap: 6px;
-    padding: 12px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 10px 8px;
   }
 
   .rec-board-tab {
-    padding: 7px 12px;
-    font-size: 0.85rem;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 6px 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
   }
 
   .rec-board-body {
