@@ -678,11 +678,8 @@ body.nav-locked{
 .home-achievements-card {
   position: relative;
   z-index: 1;
-  /* background:
-    linear-gradient(180deg, color-mix(in srgb, var(--block) 92%, #fff) 0%, var(--block) 100%); */
   background: var(--block);
   border: none;
-  /* border: 4px solid #6b8f6a; */
   border-radius: 28px;
   box-shadow: 0 12px 28px rgba(75, 29, 5, 0.12);
   padding: 28px 28px 44px;
@@ -697,7 +694,7 @@ body.nav-locked{
 /* 我的成就 虚线 */
 .home-achievements-card-stitch {
   position: absolute;
-  inset: 14px;
+  inset: 15px;
   /* border: 2px dashed var(--article-title-badge); */
   border-radius: 18px;
   pointer-events: none;
